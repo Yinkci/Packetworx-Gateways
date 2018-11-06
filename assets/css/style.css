@@ -1,0 +1,126 @@
+/**************************/
+/*  DEFAULT STYLES       */
+/************************/
+/*FONT FAMILY*/
+@font-face {
+  font-family: "Montserrat";
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: "Roboto Black";
+  src: url('../fonts/Roboto/Roboto-Black.ttf');
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: "Lato";
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: "LatoBold";
+  src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: "LatoBlack";
+  src: url('../fonts/Lato/Lato-Black.ttf');
+}
+@font-face {
+  font-family: "Oswald Regular";
+  src: url('../fonts/oswald/Oswald-Regular.ttf');
+}
+/* Display */
+.d-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.d-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex.__fixed {
+    display: flex!important;
+}
+
+
+.log-container {
+    height: 100vh;
+    width: 100%;
+}
+
+/**************************/
+/*  LOGIN                */
+/************************/
+
+.log_form {
+    width: 370px;
+    height: 440px;
+    margin: auto;
+    padding: 34px;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.28);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.28);
+}
+img.main-logo {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+.log_form input[type="submit"] {
+    background-color: #ef8021;
+    border-style: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.log_form input[type="submit"]:hover {
+    background-color: #da7117;
+    transition: .5s;
+}
+.log_form input {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #afafaf;
+    border-width: 1px;
+}
+body.login_body{
+        background-color: #f1f1f1;
+
+}
+.login-error-message {
+    color: #d8d8d8;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #7d0000;
+    margin: 10px 0px 20px 0px;
+}

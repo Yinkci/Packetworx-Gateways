@@ -1,0 +1,22 @@
+/*MEDIA QUERIES*/
+/* col-lg */
+@media (max-width:1200px){
+
+}
+
+/* col-md */
+@media (max-width:992px){
+  .d-flex {
+        display: block;
+    }
+}
+
+/* col-sm */
+@media (max-width:768px){
+    
+}
+
+/* col-xs */
+@media (max-width:576px){
+    
+}

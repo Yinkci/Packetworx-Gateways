@@ -1,0 +1,134 @@
+/*CMS*/
+.header-sen {
+    width: 100%;
+    height: 100vh;
+    background-color: #58585b;
+}
+ul.menu-sen li {
+    list-style-type: none;
+    padding: 0px 0px 0px 5px;
+}
+ul.menu-sen {
+    padding: 0;
+}
+ul.menu-sen li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+ul.menu-sen li a:hover{
+    background-color: #ef8020;
+    color: white;
+    transition: .2s;
+}
+ul.menu-sen {
+    padding: 0px;
+}
+ul.menu-sen i {
+    color: white;
+    padding: 0px 10px 0px 0px ;
+}
+
+.dash-container{
+  height: 100vh;
+}
+.pd-left10{
+padding: 0px 0px 0px 10px !important;
+}
+.admin-header {
+    background-color: white;
+    box-shadow: 1px 0px 4px 0.5px;
+    width: 100%;
+    height: 50px;
+}
+.dashboard-logo {
+    width: 170px;
+    margin: 0px 20px;
+}
+.cs-logout a {
+    text-align: right;
+    float: right;
+    margin: 5px 24px 0px 0px;
+    color: #58585b;
+}
+.cs-logout a:hover {
+    color: #ef8020;
+    text-decoration: none;
+    transition: .2s;
+}
+a.cs-menuicon {
+    font-size: 30px;
+    color: #58585b;
+    margin: 0px 20px;
+    display: block;
+}
+/*MMENU*/
+#cs-menu ul.menu-sen li {
+    list-style-type: none;
+    padding: 0px;
+}
+#cs-menu ul.menu-sen li a:hover,#cs-menu ul.menu-sen li a:hover i{
+    background-color: #ef8020;
+    color: white;
+    transition: .2s;
+
+}
+img.logo-mobile {
+    width: 100%;
+    padding: 20px;
+}
+#cs-menu .menu-sen li a {
+    color:#58585b;
+    padding: 20px;
+}
+#cs-menu .menu-sen li i {
+    color: #58585b;
+}
+#cs-menu div#mm-1 {
+    padding-top: 0;
+    background-color: white;
+    background-image: url(https://packetworx.com/media/img/sidebar_bg.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position-y: 200px;
+    background-position-x: 80px;
+}
+#cs-menu .mm-panel.mm-hasnavbar .mm-navbar {
+    display: none;
+}
+#cs-menu .mm-panels>.mm-panel>.mm-listview {
+    border-color: transparent;
+    /*margin-top: 5px;*/
+}
+.mm-navbar.mm-navbar-size-3 {
+    background-color: white;
+}
+#cs-menu .mm-navbars-top {
+    border-bottom-style: none;
+}
+/*#cs-menu .menu-sen li a {
+    color: red;
+    border-style: none;
+    outline: 1px solid white;
+}*/
+/*MEDIA QUERIES*/
+/* col-lg */
+@media (max-width:1200px){
+
+}
+
+/* col-md */
+@media (max-width:992px){
+
+}
+
+/* col-sm */
+@media (max-width:768px){
+
+}
+
+/* col-xs */
+@media (max-width:576px){
+
+}
