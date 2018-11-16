@@ -84,6 +84,8 @@
 						<div><span>Gateway Username :</span><input type="text" name="gateway_username" value="<?php echo $gateway_username; ?>"></div>
 						<div><span>Monitor :</span><input type="text" name="monitored" value="<?php echo $monitored; ?>"></div>
 						<div class="edit_submit"><input type="submit" name="submit_save" value="SAVE" class="action-edit-save"></div>
+						<div class="edit_back"><a href="dashboard">BACK</a></div>
+
 					</div>
 				</div>
 			</div>

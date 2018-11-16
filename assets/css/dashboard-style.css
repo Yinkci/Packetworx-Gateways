@@ -110,10 +110,11 @@ img.logo-mobile {
 .gateways-table{
     width: 90%;
     margin: 50px 0px 0px 30px;
+    outline: 3px solid #ef8020;
 }
 table.gateways-table th {
     border: 1px solid #ececec;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 table.gateways-table th:not(:last-child)  {
@@ -132,6 +133,32 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+.all_title_tr{
+    background-color: #ef8020;
+    color: white;
+}
+.clr_2{
+    background-color: #ef802017;
+}
+.gateway_btns {
+    background-color: #58585b;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+.controller div {
+    display: inline-block;
+}
+.controller {
+    margin: 5px 28px;
+}
+.gateway_btns:hover {
+    background-color: #ef8020;
+    transition: .2s;
+    cursor: pointer;
 }
 /*#cs-menu .menu-sen li a {
     color: red;
@@ -156,5 +183,7 @@ button:focus {
 
 /* col-xs */
 @media (max-width:576px){
-
+.gateways-table{
+    margin: 0px;
+}
 }

@@ -11,11 +11,11 @@
 </head>
 <body class="dashboard-view">
 
-<div class="menu col-md-10 col-md-10 d-none col-xl-10 d-xl-block pd-left10">
-	<div class="view_gateways">
+<div class="menu col-md-10 col-md-10 col-xl-10 d-xl-block pd-left10">
+	<div class="view_gateways" style="overflow-x:auto;">
 		<form action="" method="POST">
 		<table class="gateways-table">
-		<tr>
+		<tr class="all_title_tr">
 			<th>ESN</th>
 			<th>Status</th> 
 			<th>Gateway ID</th>
@@ -29,6 +29,7 @@
 <?php
 	$query  = mysqli_query($con,"SELECT * FROM  gateways");
 	$row = mysqli_num_rows($query);
+	$x =1;
 	while($rowx = mysqli_fetch_array($query)){
 	$gateway_id = $rowx['gateway_id'];
 	$tti_id = $rowx['tti_id'];
@@ -58,7 +59,7 @@
 	$gateway_username = $rowx['gateway_username'];
 	$monitored = $rowx['monitored'];
 ?>
-	<tr class="<?php echo "esn_".$gateway_id ?>">
+	<tr class="<?php echo "esn_".$gateway_id ?> clr_<?php echo $x?>">
 			<td><?php echo $esn; ?> </td>
 			<td><?php echo $deployment_status; ?> </td>
 			<td><?php echo $gateway_id; ?> </td>
@@ -68,12 +69,24 @@
 			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a> <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>'> Edit </a> <a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_"> Delete </a></td>
 	
 		</tr>
-<?php } ?><!-- end og while -->
+<?php 
+// color counter interval
+if($x==2):
+	$x=0;
+	$x++;
+else:
+	$x++;
+endif;
+} ?><!-- end og while -->
 
 		</table>
 
 		</form>
 	</div>
+<div class="controller">
+	<div class="gateway_btns">Add New Gateway</div>
+	<div class="gateway_btns">Delete All Gateways</div>
+</div>
 </div><!-- end of col 10 -->
 
 </div><!-- end of row dashbpard-header -->

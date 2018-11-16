@@ -4,9 +4,9 @@
 	<nav id="cs-menu" class="cs-menu">
 		<ul class="menu-sen">
 			<li><a href="#"><i class="fas fa-code"></i> Dashboards</a></li>
-			<li><a href="menu"><i class="fas fa-th-list"></i> Menu</a></li>
+			<li><a href="menu"><i class="fas fa-th-list"></i> Gateways</a></li>
 			<li><a href="http://localhost/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
-			<li><a href="#"><i class="fas fa-cog"></i> Theme Settings</a></li>
+			<li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
 			<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
 		</ul>
 	</nav>
@@ -14,6 +14,7 @@
 <!-- DESKTOP MENU -->
 <div class="d-flex">
 	<div class="admin-header">
+		<div class="row">
 			<div class="col-3 col-md-6">
 				<a href="#cs-menu" class="cs-menuicon  d-xl-none text-left">
 					<div class="d-table">
@@ -31,6 +32,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
 </div>
 <div class="row">
@@ -40,7 +42,7 @@
 				<li><a href="#"><i class="fas fa-code"></i> Dashboard</a></li>
 				<li><a href="menu"><i class="fas fa-th-list"></i> Gateways</a></li>
 				<li><a href="http://localhost/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
-				<li><a href="#"><i class="fas fa-cog"></i> Theme Settings</a></li>
+				<li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
 				<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
 			</ul>
 		</div>

@@ -25,10 +25,11 @@ table.gateways-table input {
 .action-edit-save  {
     background-color: #58585b;
     color: white;
-    padding: 5px 20px;
+    padding: 11px 10px;
     border-radius: 5px;
     text-decoration: none;
     margin: 20px 0px;
+    width: 200px !important;
 }
 .action-edit-save:hover{
 	background-color: #ef8020;
@@ -72,4 +73,26 @@ table.gateways-table input {
 .view_gateways_view input {
     background-color: transparent;
     border-bottom: none;
+}
+.edit_back a {
+    background-color: #58585b;
+    color: white;
+    padding: 11px 81px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px 0px;
+}
+.edit_back a:hover{
+	background-color: #ef8020;
+	transition: .2s;
+	cursor: pointer;
+}
+.view_back a {
+    background-color: #58585b;
+    color: white;
+    padding: 11px 81px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px 0px;
+    display: inline-block;
 }
