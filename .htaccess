@@ -6,6 +6,6 @@ RewriteRule ^(.*?)/?$ $1.php [L]
 
 RewriteCond %{SCRIPT_FILENAME} !-d  
 RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteRule ^([^/]+)/?$ ?page=$1 [L]
+RewriteRule ^([^/]+)/?$ ?dashboard=$1 [L]
 
 

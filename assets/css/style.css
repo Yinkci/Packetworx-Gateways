@@ -124,3 +124,6 @@ body.login_body{
     background-color: #7d0000;
     margin: 10px 0px 20px 0px;
 }
+body{
+  overflow-x: hidden;
+}
