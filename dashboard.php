@@ -92,7 +92,7 @@ endif;
 		</div>
 		<div class="col-md-3">
 			<div class="">
-				<form method="POST" action="data/gatewaysDeleteAll" class="delForm">
+				<form method="POST" action="" class="delForm">
 					<input type="submit" name="submit_dellAll" class="delAll" value="Delete All">
 				</form>
 			</div>

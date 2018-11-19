@@ -45,7 +45,22 @@
 						<div><span>Care Of :</span><input type="text" name="care_of" value=""></div>
 						<div><span>Notes :</span><input type="text" name="notes" value=""></div>
 						<div><span>Gateway Username :</span><input type="text" name="gateway_username" value=""></div>
-						<div><span>Monitor :</span><input type="text" name="monitored" value=""></div>
+						<div>
+							<span>Monitor :</span>
+							<?php $monitored = "Yes" ?>
+							<input type="hidden" name="monitored" value="<?php echo $monitored; ?>" id="selected_text" >
+					 	 	<?php  if($monitored=="No"): ?>
+							<select onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
+							<option value="yes">Yes</option>
+							<option value="no" selected="">No</option>
+							</select>
+							<?php else: ?>
+							<select onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
+							<option value="yes" selected>Yes</option>
+							<option value="no" >No</option>
+							</select>
+							<?php endif; ?> 
+						</div>
 						<div class="edit_submit"><input type="submit" name="submit_add" value="ADD" class="action-edit-save"></div>
 						<div class="edit_back"><a href="dashboard">BACK</a></div>
 

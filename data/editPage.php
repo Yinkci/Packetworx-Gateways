@@ -38,7 +38,7 @@ $query = mysqli_query($con,"UPDATE  gateways SET gateway_id='$gateway_id',tti_id
 
 
 mysqli_close($con);
-header("location:".home_url()."/dashboard");
+header("location:".home_url()."/gateways");
 
 
 

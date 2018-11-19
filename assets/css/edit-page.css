@@ -88,6 +88,8 @@ table.gateways-table input {
 	background-color: #ef8020;
 	transition: .2s;
 	cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 .view_back a {
     background-color: #58585b;
@@ -97,6 +99,13 @@ table.gateways-table input {
     text-decoration: none;
     margin: 20px 0px;
     display: inline-block;
+}
+.view_back a:hover {
+    background-color: #ef8020;
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+
 }
 .view_gateways_edit select {
     padding: 1px 125px;
