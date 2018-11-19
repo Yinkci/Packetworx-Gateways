@@ -55,11 +55,11 @@
 					<div class="col-md-6">
 						<div><span>ESN :</span><input type="text" name="esn" value="<?php echo $esn; ?>"></div>
 						<div><span>Status :</span><input type="text" name="deployment_status" value="<?php echo $deployment_status; ?>"></div> 
-						<div><span>Gateway ID :</span><input type="text" name="gateway_id" value="<?php echo $gateway_id; ?>"> </div>
+						<div><span>Gateway ID :</span><input  readonly class="readonly" type="text" name="gateway_id" value="<?php echo $gateway_id; ?>"> </div>
 						<div><span>SSID :</span><input type="text" name="ssid" value="<?php echo $ssid; ?>"></div>
 						<div><span>Site :</span><input type="text" name="site_location" value="<?php echo $site_location; ?>"></div>
 						<div><span>City :</span><input type="text" name="city" value="<?php echo $city; ?>"></div> 
-						<div><span>TTI ID :</span><input type="text" name="tti_id" value="<?php echo $tti_id; ?>"></div> 
+						<div><span>TTI ID :</span><input  readonly class="readonly" type="text" name="tti_id" value="<?php echo $tti_id; ?>"></div> 
 						<div><span>Longitude :</span><input type="text" name="lon" value="<?php echo $lon; ?>"></div> 
 						<div><span>Latitude :</span><input type="text" name="lat" value="<?php echo $lat; ?>"></div>
 						<div><span>Display Name :</span><input type="text" name="display_name" value="<?php echo $display_name; ?>"></div> 
@@ -78,11 +78,25 @@
 						<div><span>Antenna :</span><input type="text" name="antenna" value="<?php echo $antenna; ?>"></div>
 						<div><span>Gateway Site ID :</span><input type="text" name="gateway_site_id" value="<?php echo $gateway_site_id; ?>"></div>
 						<div><span>Contact :</span><input type="text" name="contact" value="<?php echo $contact; ?>"></div>
-						<div><span>Date Installed :</span><input type="text" name="date_installed" value="<?php echo $date_installed; ?>"></div>
+						<div><span>Date Installed :</span><input type="date" data-date-inline-picker="true" name="date_installed" value="<?php echo $date_installed; ?>"></div>
 						<div><span>Care Of :</span><input type="text" name="care_of" value="<?php echo $care_of; ?>"></div>
 						<div><span>Notes :</span><input type="text" name="notes" value="<?php echo $notes; ?>"></div>
 						<div><span>Gateway Username :</span><input type="text" name="gateway_username" value="<?php echo $gateway_username; ?>"></div>
-						<div><span>Monitor :</span><input type="text" name="monitored" value="<?php echo $monitored; ?>"></div>
+						<div>
+							<span>Monitor :</span>
+							<input type="hidden" name="monitored" value="<?php echo $monitored; ?>" id="selected_text" >
+					 	 	<?php  if($monitored=="No"): ?>
+							<select onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
+							<option value="yes">Yes</option>
+							<option value="no" selected="">No</option>
+							</select>
+							<?php else: ?>
+							<select onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
+							<option value="yes" selected>Yes</option>
+							<option value="no" >No</option>
+							</select>
+							<?php endif; ?> 
+						</div>
 						<div class="edit_submit"><input type="submit" name="submit_save" value="SAVE" class="action-edit-save"></div>
 						<div class="edit_back"><a href="dashboard">BACK</a></div>
 

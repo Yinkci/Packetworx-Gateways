@@ -21,7 +21,7 @@ if (isset($_POST["log_submit"])) {
 
 		if ($row==1) {
 			$_SESSION['login_user'] = $username;
-			header("location: dashboard");
+			header("location: gateways");
 		}
 		else{
 			$error="invalid username / password";

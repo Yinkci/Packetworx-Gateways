@@ -108,7 +108,7 @@ img.logo-mobile {
     border-bottom-style: none;
 }
 .gateways-table{
-    width: 90%;
+    width: 93%;
     margin: 50px 0px 0px 30px;
     outline: 3px solid #ef8020;
 }
@@ -121,7 +121,7 @@ table.gateways-table th:not(:last-child)  {
     min-width: 150px;
 }
 table.gateways-table th:last-child  {
-    min-width: 200px;
+    min-width: 210px;
 }
 table.gateways-table td {
     text-align: center;
@@ -145,12 +145,12 @@ button:focus {
     background-color: #58585b;
     color: white;
     padding: 10px;
-    width: 200px;
+    width: 100%;
     text-align: center;
     border-radius: 5px;
 }
 .controller div {
-    display: inline-block;
+    margin: 5px 0px;
 }
 .controller {
     margin: 5px 28px;
@@ -159,6 +159,38 @@ button:focus {
     background-color: #ef8020;
     transition: .2s;
     cursor: pointer;
+}
+.gateway_btns:hover .delAll {
+    background-color: #ef8020;
+    transition: .2s;
+    cursor: pointer;
+}
+.gateway_btns a,.gateway_btns a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.delAll{
+    background-color: #58585b;
+    transition: .2s;
+    cursor: pointer;
+    border-style: none;
+    color: white;
+    padding: 10px 70px;
+    border-radius: 5px;
+    width: 100%;
+}
+.delAll:hover{
+    background-color: #ef8020;
+    transition: .2s;
+    cursor: pointer;
+}
+form.delForm {
+    padding: 0;
+    margin: 0;
+}
+table.gateways-table td {
+    padding: 12px;
 }
 /*#cs-menu .menu-sen li a {
     color: red;

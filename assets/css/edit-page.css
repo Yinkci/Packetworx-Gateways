@@ -44,7 +44,7 @@ table.gateways-table input {
     margin: 12px;
 }
 .view_gateways_edit {
-    margin: 50px;
+    /*margin: 50px;*/
     border-radius: 5px;
     padding: 30px;
 }
@@ -52,6 +52,7 @@ table.gateways-table input {
     border: none;
     border-bottom: 1px solid #d6d6d6;
     width: 300px;
+    padding: 0px 5px;
 }
 
 .view_gateways_view div span {
@@ -61,7 +62,7 @@ table.gateways-table input {
     font-weight: 500;
 }
 .view_gateways_view {
-    margin: 50px;
+    /*margin: 50px;*/
     border-radius: 5px;
     padding: 30px;
 }
@@ -69,6 +70,7 @@ table.gateways-table input {
     border: none;
     border-bottom: 1px solid #d6d6d6;
     width: 300px;
+    padding: 0px 5px;
 }
 .view_gateways_view input {
     background-color: transparent;
@@ -95,4 +97,19 @@ table.gateways-table input {
     text-decoration: none;
     margin: 20px 0px;
     display: inline-block;
+}
+.view_gateways_edit select {
+    padding: 1px 125px;
+}
+
+input.readonly {
+    background-color: #ef8020;
+    color: white;
+    cursor: no-drop;
+}
+.action-edit-save{
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    width: 300px;
+    padding: 10px 5px !important; 
 }

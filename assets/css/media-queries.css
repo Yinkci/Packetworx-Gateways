@@ -9,11 +9,14 @@
   .d-flex {
         display: block;
     }
+   /* table.gateways-table th:last-child {
+	min-width: 210px ;
+	}*/
 }
 
 /* col-sm */
 @media (max-width:768px){
-    
+	
 }
 
 /* col-xs */

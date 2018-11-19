@@ -6,12 +6,12 @@
 
 <!-- FONTAWESOME -->
 <link rel="stylesheet" type="text/css" href="vendors/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
-<!-- BOOSTRAP 4 -->
-<link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.min.css">
+
 <!-- FAVICO -->
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 <!-- STYLES -->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/settings.css">
 <link rel="stylesheet" type="text/css" href="assets/css/edit-page.css">
 
 <link rel="stylesheet" type="text/css" href="assets/css/dashboard-style.css">
@@ -26,3 +26,7 @@
 </script>
 <!-- AJAX -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- BOOSTRAP 4 -->
+<link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.min.css">
+<script  src="vendors/bootstrap/js/bootstrap.min.js"></script>
+

@@ -3,10 +3,9 @@
 <div id="my-wrapper-cs-menu" >       
 	<nav id="cs-menu" class="cs-menu">
 		<ul class="menu-sen">
-			<li><a href="#"><i class="fas fa-code"></i> Dashboards</a></li>
-			<li><a href="menu"><i class="fas fa-th-list"></i> Gateways</a></li>
-			<li><a href="http://localhost/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
-			<li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+			<li><a href="dashboard"><i class="fas fa-code"></i> Dashboards</a></li>
+			<li><a href="gateways"><i class="fas fa-th-list"></i> Gateways</a></li>
+			<li><a href="settings"><i class="fas fa-cog"></i>Settings</a></li>
 			<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
 		</ul>
 	</nav>
@@ -39,11 +38,14 @@
 	<div class="menu col-md-2 col-md-2 d-none col-xl-2 d-xl-block pd-left10">
 		<div class="header-sen ">
 			<ul class="menu-sen">
-				<li><a href="#"><i class="fas fa-code"></i> Dashboard</a></li>
-				<li><a href="menu"><i class="fas fa-th-list"></i> Gateways</a></li>
-				<li><a href="http://localhost/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
-				<li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
-				<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
+				<?php 
+				$currentPage =  str_replace(".php", "",  basename($_SERVER['PHP_SELF'])); 
+		
+				?>
+				<li class="<?php if($currentPage=="dashboard"):echo "activelink"; else: endif; ?>"><a href="dashboard"><i class="fas fa-code"></i> Dashboard</a></li>
+				<li class="<?php if($currentPage=="gateways"):echo "activelink"; else: endif; ?>"><a href="gateways"><i class="fas fa-th-list"></i> Gateways</a></li>
+				<li class="<?php if($currentPage=="settings"):echo "activelink"; else: endif; ?>"><a href="settings"><i class="fas fa-cog"></i>Settings</a></li>
+				<li class="<?php echo $currentPage ?>"><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
 			</ul>
 		</div>
 	</div>
