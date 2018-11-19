@@ -208,6 +208,7 @@ img.main-dashboard-logo {
     width: 500px;
     text-align: center;
     margin: auto;
+    opacity: 0.2
 }
 /*#cs-menu .menu-sen li a {
     color: red;
