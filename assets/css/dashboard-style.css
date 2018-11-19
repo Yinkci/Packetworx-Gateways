@@ -3,6 +3,10 @@
     width: 100%;
     height: 100vh;
     background-color: #58585b;
+    background-image: url(https://packetworx.com/media/img/sidebar_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
 }
 ul.menu-sen li {
     list-style-type: none;
