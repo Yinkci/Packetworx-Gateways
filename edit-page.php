@@ -98,7 +98,7 @@
 							<?php endif; ?> 
 						</div>
 						<div class="edit_submit"><input type="submit" name="submit_save" value="SAVE" class="action-edit-save"></div>
-						<div class="edit_back"><a href="dashboard">BACK</a></div>
+						<div class="edit_back"><a href="gateways">BACK</a></div>
 
 					</div>
 				</div>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
 <link rel="stylesheet" type="text/css" href="assets/css/edit-page.css">
+<link rel="stylesheet" type="text/css" href="assets/css/search-style.css">
+
 
 <link rel="stylesheet" type="text/css" href="assets/css/dashboard-style.css">
 <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">

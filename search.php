@@ -37,7 +37,8 @@
 
 		</tr>
 <?php
-	$query  = mysqli_query($con,"SELECT * FROM  gateways");
+	$term = mysqli_real_escape_string($con,$_REQUEST['term']);    
+	$query  = mysqli_query($con,"SELECT * FROM gateways WHERE gateway_id LIKE '%".$term."%'");
 	$row = mysqli_num_rows($query);
 	$x =1;
 	while($rowx = mysqli_fetch_array($query)){

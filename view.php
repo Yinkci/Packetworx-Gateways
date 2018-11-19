@@ -83,7 +83,7 @@
 						<div><span>Notes :</span><input  disabled="true" type="text" name="notes" value="<?php echo $notes; ?>"></div>
 						<div><span>Gateway Username :</span><input  disabled="true" type="text" name="gateway_username" value="<?php echo $gateway_username; ?>"></div>
 						<div><span>Monitor :</span><input  disabled="true" type="text" name="monitored" value="<?php echo $monitored; ?>"></div>
-						<div class="view_back"><a href="dashboard">BACK</a></div>
+						<div class="view_back"><a href="gateways">BACK</a></div>
 
 					</div>
 				</div>
