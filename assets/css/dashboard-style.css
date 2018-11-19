@@ -196,6 +196,14 @@ form.delForm {
 table.gateways-table td {
     padding: 12px;
 }
+.cs-logout a {
+    text-transform: capitalize;
+}
+.no-border input {
+    border: navajowhite;
+    background-color: transparent;
+    border-bottom: 1px solid #d4d4da;
+}
 /*#cs-menu .menu-sen li a {
     color: red;
     border-style: none;

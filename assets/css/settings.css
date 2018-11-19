@@ -30,7 +30,7 @@
     display: inline-block;
     margin: 20px 0px 0px 0px;
     border-radius: 5px;
-    width: 200px;
+    width: 175px;
     text-align: center;
 }
 .settings_ a:hover {
@@ -66,4 +66,9 @@ a.closeModal {
     background-color: #ef8020;
     color: white;
     transition: .2s;
+}
+.settings_.changepass input {
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #bdbdbd;
 }
