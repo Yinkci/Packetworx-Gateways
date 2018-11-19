@@ -204,6 +204,11 @@ table.gateways-table td {
     background-color: transparent;
     border-bottom: 1px solid #d4d4da;
 }
+img.main-dashboard-logo {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
 /*#cs-menu .menu-sen li a {
     color: red;
     border-style: none;

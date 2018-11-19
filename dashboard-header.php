@@ -6,7 +6,7 @@
 			<li><a href="dashboard"><i class="fas fa-code"></i> Dashboards</a></li>
 			<li><a href="gateways"><i class="fas fa-th-list"></i> Gateways</a></li>
 			<li><a href="settings"><i class="fas fa-cog"></i>Settings</a></li>
-			<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
+			<!-- <li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li> -->
 			<li><a href="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
 
 		</ul>
@@ -46,7 +46,7 @@
 				<li class="<?php if($currentPage=="dashboard"):echo "activelink"; else: endif; ?>"><a href="dashboard"><i class="fas fa-code"></i> Dashboard</a></li>
 				<li class="<?php if($currentPage=="gateways" || $currentPage=="edit-page" || $currentPage=="view"  ):echo "activelink"; else: endif; ?>"><a href="gateways"><i class="fas fa-th-list"></i> Gateways</a></li>
 				<li class="<?php if($currentPage=="settings"):echo "activelink"; else: endif; ?>"><a href="settings"><i class="fas fa-cog"></i> Settings</a></li>
-				<li class="<?php echo $currentPage ?>"><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
+				<!-- <li class="<?php echo $currentPage ?>"><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li> -->
 				<li class="<?php if($currentPage=="logout"):echo "activelink"; else: endif; ?>"><a href="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
 			</ul>
 		</div>
