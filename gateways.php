@@ -10,13 +10,7 @@
 <title></title>
 </head>
 <body class="dashboard-view">
-
 <div class="menu col-md-10 col-md-12 col-xl-10 d-xl-block pd-left10">
-<!-- search  -->
-<!-- <form>
-	<input type="text" name="search" placeholder="Search Here">
-	<input type="submit" name="sub_search" value="Search">
-</form> -->
 <div class="search-field">
 	<form action="search" method="post"> 
 	<input type="text" name="term" placeholder="Search Gateway / ESN" />
@@ -34,7 +28,6 @@
 			<th>Site</th> 
 			<th>City</th> 
 			<th>Action</th> 
-
 		</tr>
 <?php
 	$query  = mysqli_query($con,"SELECT * FROM  gateways");
@@ -77,7 +70,6 @@
 			<td><?php echo $site_location; ?> </td>
 			<td><?php echo $city; ?> </td>
 			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a> <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>'> Edit </a> <a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_"> Delete </a></td>
-	
 		</tr>
 		<?php 
 		// color counter interval

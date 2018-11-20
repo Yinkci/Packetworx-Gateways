@@ -2,21 +2,13 @@
 <?php require ("dashboard-header.php"); ?>
 <?php require ("config/database_con.php"); ?>
 <?php require ("inc/cs-functions.php"); ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <title></title>
 </head>
 <body class="dashboard-view">
-
 <div class="menu col-md-10 col-md-12 col-xl-10 d-xl-block pd-left10">
-<!-- search  -->
-<!-- <form>
-	<input type="text" name="search" placeholder="Search Here">
-	<input type="submit" name="sub_search" value="Search">
-</form> -->
 <div class="search-field">
 	<form action="search" method="post"> 
 	<input type="text" name="term" placeholder="Search Gateway / ESN" />
@@ -34,7 +26,6 @@
 			<th>Site</th> 
 			<th>City</th> 
 			<th>Action</th> 
-
 		</tr>
 <?php
 	$term = mysqli_real_escape_string($con,$_REQUEST['term']);    

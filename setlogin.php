@@ -6,7 +6,6 @@ require ("config/database_con.php");
 if (isset($_POST["log_submit"])) {
 	if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
 
-
 		$username = $_POST["log_user"];
 		$password = $_POST["log_pass"];
 

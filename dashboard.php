@@ -10,9 +10,7 @@
 <title></title>
 </head>
 <body class="dashboard-view">
-
 <div class="menu col-md-10 col-md-2 col-xl-10 d-xl-block pd-left10">
-			
  <div class="d-flex">
 		<div class="log-container text-center">
 			<div class="d-table">
@@ -23,6 +21,5 @@
 		</div>
 	</div>
 </div><!-- end of col 10 -->
-
 </div><!-- end of row dashbpard-header -->
 </html>

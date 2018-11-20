@@ -14,7 +14,6 @@
 	$PageName = $_GET['edit']; 
 	$query = mysqli_query($con,"SELECT * FROM gateways where esn = '$PageName'  ");
 	$row = mysqli_num_rows($query);
-
 	while($rowx = mysqli_fetch_array($query)){
 	$gateway_id = $rowx['gateway_id'];
 	$tti_id = $rowx['tti_id'];
@@ -43,11 +42,8 @@
 	$notes = $rowx['notes'];
 	$gateway_username = $rowx['gateway_username'];
 	$monitored = $rowx['monitored'];
-
 	}
-
 ?>
-
 <div class="menu col-md-10 col-md-10 col-xl-10 d-xl-block pd-left10">
 		<form method="POST" action="data/editPage">
 			<div class="view_gateways_edit">
@@ -106,6 +102,5 @@
 			</div>
 		</form>
 </div><!-- end of col 10 -->
-
 </div><!-- end of row dashbpard-header -->
 </html>
