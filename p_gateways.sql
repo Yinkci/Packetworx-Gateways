@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 20, 2018 at 01:15 AM
+-- Generation Time: Nov 20, 2018 at 05:54 AM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.20
 
@@ -63,7 +63,7 @@ CREATE TABLE `gateways` (
 --
 
 INSERT INTO `gateways` (`gateway_id`, `tti_id`, `lon`, `lat`, `display_name`, `deployment_status`, `esn`, `mac`, `serial_number`, `ctn_box_number`, `ssid`, `ssid_key`, `router_username`, `router_key`, `gateway_key`, `owner`, `frequency`, `antenna`, `gateway_site_id`, `site_location`, `city`, `contact`, `date_installed`, `care_of`, `notes`, `gateway_username`, `monitored`) VALUES
-('08497bf35a6', 'tester', 'tester', 'test', 'test', 'installed', '150200', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', '2018-11-22', 'test', 'test', 'tests', 'No'),
+('08497bf35a6', 'tester', 'tester', 'test', 'test', 'installed', '1500', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', '2018-11-22', 'test', 'test', 'tests', 'No'),
 ('08497bf35a6csss', 'tester', 'tester', 'tester', 'tester', 'installed', '1028', 'tester', 'tester', 'tester', '10202-20', 'tester', 'tester', 'tester', 'tester', 'tester', 'tester', 'tester', 'tester', 'Ortigas Pasig', 'Bulacan', 'tester', '2018-11-19', 'Nicky', 'none', 'tester', 'Yes'),
 ('c3497bf35a6', 'tester', 'tester', 'test', 'tester', 'Not Installed', '1880', 'tester', 'tester', 'tester', '10202-20', 'tester', 'tester', 'tester', 'tester', 'tester', 'tester', 'tester', 'tester', 'Ortigas Pasig', 'Bulacan', 'tester', '2018-11-24', 'Nicky', 'none', 'tester', 'No');
 
@@ -75,6 +75,7 @@ INSERT INTO `gateways` (`gateway_id`, `tti_id`, `lon`, `lat`, `display_name`, `d
 
 CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
+  `status` varchar(50) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -83,12 +84,9 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
-(1, 'poi', '5555'),
-(1933, 'Emiya', 'shirou000'),
-(6309, 'Yin', '0000'),
-(6489, 'Alter', '0000'),
-(8136, 'Saber', '0000');
+INSERT INTO `user` (`id_user`, `status`, `username`, `password`) VALUES
+(1, 'Admin', 'poi', '555'),
+(2206, 'Editor', 'Yin', '0000');
 
 --
 -- Indexes for dumped tables

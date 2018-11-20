@@ -72,7 +72,7 @@
 			<td><?php echo $city; ?> </td>
 			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a>
 			<!-- Check if admin or editor -->
-			<?php if($status=="admin"): ?>			
+			<?php if($status=="Admin"): ?>			
 			 <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>'> Edit </a><a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_"> Delete </a>
 			<?php else: ?>
 			<?php endif; ?>

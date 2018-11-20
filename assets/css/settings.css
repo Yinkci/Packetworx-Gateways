@@ -110,3 +110,8 @@ div#changepass input:not(:last-child) {
 .settings_.changepass.adduser_ input:not(:last-child) {
     color: black;
 }
+.role_box {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}

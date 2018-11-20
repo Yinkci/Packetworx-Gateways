@@ -21,6 +21,8 @@
 	$username = $rowx['username'];
 	$password = $rowx['password'];
 	$id_user = $rowx['id_user'];
+	$status = $rowx['status'];
+
 
 	}
 
@@ -37,7 +39,7 @@
 						<a href="changpass" data-toggle="modal" data-target="#changepass" >Change Password</a>
 					</div>
 					<div class="col-md-6">
-						<?php if($status=="admin"): ?>	
+						<?php if($status=="Admin"): ?>	
 						<a href="changpass" data-toggle="modal" data-target="#adduser">Add New User</a>
 						<?php else: ?>
 						<?php endif; ?>
@@ -89,6 +91,11 @@
 					<form method="POST" action="data/addUser">
 						<div class="settings_ changepass adduser_">
 							<div class="id_user"></div><input type="hidden" name="id_user" value="<?php echo $id_user ?>">
+							<div class="status">Role</div><input type="hidden" name="status" id="selected_role" value="<?php echo $status ?>">
+							<select onchange="document.getElementById('selected_role').value=this.options[this.selectedIndex].text" class="role_box">
+							<option value="admin">Admin</option>
+							<option value="editor" >Editor</option>
+							</select>
 							<div class="username">Username</div><input type="text" name="username" value="<?php echo $username ?>">
 							<div class="password">Password</div><input type="password" name="password" value="<?php echo $password ?>">
 							<div class="id_user"></div><input type="hidden" name="id_user" value="<?php echo rand(10,9000); ?>">
