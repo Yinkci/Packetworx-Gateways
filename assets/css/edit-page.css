@@ -32,7 +32,7 @@ table.gateways-table input {
     width: 200px !important;
 }
 .action-edit-save:hover{
-	background-color: #ef8020;
+	background-color: #424242;
 	transition: .2s;
 	cursor: pointer;
 }
@@ -51,7 +51,7 @@ table.gateways-table input {
 .view_gateways_edit input {
     border: none;
     border-bottom: 1px solid #d6d6d6;
-    width: 300px;
+    width: 231px;
     padding: 0px 5px;
 }
 
@@ -77,43 +77,46 @@ table.gateways-table input {
     border-bottom: none;
 }
 .edit_back a {
-    background-color: #58585b;
+     background-color: #58585b;
     color: white;
     padding: 11px 81px;
     border-radius: 5px;
     text-decoration: none;
-    margin: 20px 0px;
+    width: 100% !important;
+    display: inline-block;
+    text-align: center;
 }
 .edit_back a:hover{
-	background-color: #ef8020;
+	background-color: #424242;
 	transition: .2s;
 	cursor: pointer;
     text-decoration: none;
     color: white;
 }
 .view_back a {
-    background-color: #58585b;
+     background-color: #58585b;
     color: white;
     padding: 11px 81px;
     border-radius: 5px;
     text-decoration: none;
-    margin: 20px 0px;
+    width: 100% !important;
     display: inline-block;
+    text-align: center;
 }
 .view_back a:hover {
-    background-color: #ef8020;
+    background-color: #424242;
     color: white;
     text-decoration: none;
     transition: .2s;
 
 }
 .view_gateways_edit select {
-    padding: 1px 125px;
+    padding: 1px 90px;
 }
 
 input.readonly {
-    background-color: #ef8020;
-    color: white;
+    background-color: #dcdcdc96;
+    color: black;
     cursor: no-drop;
 }
 .action-edit-save{
@@ -121,4 +124,23 @@ input.readonly {
     border-bottom: 1px solid #d6d6d6;
     width: 300px;
     padding: 10px 5px !important; 
+}
+input.action-edit-save {
+    width: 100% !important;
+}
+span.nofound {
+    color: #58585b;
+    font-size: 17px;
+    padding: 1px;
+    margin: -30px 5px 5px 5px;
+    display: block;
+    position: absolute;
+}
+span.searchfound {
+    color: #58585b;
+    font-size: 17px;
+    padding: 1px;
+    margin: -30px 5px 5px 5px;
+    display: block;
+    position: absolute;
 }

@@ -1,4 +1,4 @@
-.search_ span {
+search-field search_ span {
     color: #ef8020;
     font-size: 25px;
     margin: 10px;
@@ -27,7 +27,7 @@
     border-bottom-left-radius: 0px;
 }
 .search-field input[type="submit"]:hover {
-    background-color: #ef8020;
+    background-color: #424242;
 	color: white;
 	text-decoration: none;
     transition: .2s;

@@ -19,7 +19,7 @@
 </form> -->
 <div class="search-field">
 	<form action="search" method="post"> 
-	<input type="text" name="term" placeholder="Search Gateway" />
+	<input type="text" name="term" placeholder="Search Gateway / ESN" />
 	<input type="submit" value="Submit" /> 
 	</form> 
 </div>
@@ -94,7 +94,7 @@
 <div class="controller">
 	<div class="row">
 		<div class="col-md-3">
-			<div class="gateway_btns"><a href="addgateway">Add New Gateway</a></div>
+			<a href="addgateway"><div class="gateway_btns">Add New Gateway</div></a>
 		</div>
 		<div class="col-md-3">
 			<div class="">

@@ -19,7 +19,7 @@
 </form> -->
 <div class="search-field">
 	<form action="search" method="post"> 
-	<input type="text" name="term" placeholder="Search Gateway" />
+	<input type="text" name="term" placeholder="Search Gateway / ESN" />
 	<input type="submit" value="Submit" /> 
 	</form> 
 </div>
@@ -38,7 +38,7 @@
 		</tr>
 <?php
 	$term = mysqli_real_escape_string($con,$_REQUEST['term']);    
-	$query  = mysqli_query($con,"SELECT * FROM gateways WHERE gateway_id LIKE '%".$term."%'");
+	$query  = mysqli_query($con,"SELECT * FROM gateways WHERE (gateway_id LIKE '%".$term."%' OR esn LIKE '%".$term."%'  )   ");
 	$row = mysqli_num_rows($query);
 	$x =1;
 	while($rowx = mysqli_fetch_array($query)){
@@ -69,7 +69,9 @@
 	$notes = $rowx['notes'];
 	$gateway_username = $rowx['gateway_username'];
 	$monitored = $rowx['monitored'];
+
 ?>
+
 	<tr class="<?php echo "esn_".$gateway_id ?> clr_<?php echo $x?>">
 			<td><?php echo $esn; ?> </td>
 			<td><?php echo $deployment_status; ?> </td>
@@ -88,7 +90,14 @@
 		else:
 			$x++;
 		endif;
-		} ?><!-- end og while -->
+		}
+?>
+<?php if($row==0): ?>
+		<span class="nofound">No match found</span>
+<?php else: ?>
+		<span class="searchfound"><?php echo $row ?> result/s found</span>
+<?php endif; ?>
+		<!-- end og while -->
 		</table>
 		</form>
 	</div>

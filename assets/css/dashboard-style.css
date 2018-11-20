@@ -159,10 +159,16 @@ button:focus {
 .controller {
     margin: 5px 28px;
 }
+.controller a:hover {
+    text-decoration: none;
+    color: white;
+}
 .gateway_btns:hover {
-    background-color: #ef8020;
+    background-color: #424242;
     transition: .2s;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 .gateway_btns:hover .delAll {
     background-color: #ef8020;
@@ -185,7 +191,7 @@ button:focus {
     width: 100%;
 }
 .delAll:hover{
-    background-color: #ef8020;
+    background-color: #424242;
     transition: .2s;
     cursor: pointer;
 }

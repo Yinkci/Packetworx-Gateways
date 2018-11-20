@@ -21,5 +21,20 @@
 
 /* col-xs */
 @media (max-width:576px){
-    
+	span.searchfound {
+	    color: #58585b;
+	    font-size: 17px;
+	    padding: 1px;
+	    margin: 0px 5px 5px 10px;
+	    display: block;
+	     position: relative; 
+	}
+	 span.nofound {
+	    color: #58585b;
+	    font-size: 17px;
+	    padding: 1px;
+	    margin: 0px 5px 5px 10px;
+	    display: block;
+	     position: relative; 
+	}
 }
