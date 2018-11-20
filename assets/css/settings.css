@@ -12,16 +12,18 @@
 .settings_ {
     width: 100%;
     padding: 20px;
-    background-color: aliceblue;
+    background-color: #ef8020;
     -webkit-box-shadow: 1px 1px 5px 0px rgba(66,66,66,0.58);
     -moz-box-shadow: 1px 1px 5px 0px rgba(66,66,66,0.58);
     box-shadow: 1px 1px 5px 0px rgba(66,66,66,0.58);
     border-radius: 5px;
+    color: white;
 }
 .settings_ input {
     margin: 5px;
     padding: 5px;
     width: 100%;
+    color: white;
 }
 .settings_ a {
     background-color: brown;
@@ -30,7 +32,7 @@
     display: inline-block;
     margin: 20px 0px 0px 0px;
     border-radius: 5px;
-    width: 175px;
+    width: 100%;
     text-align: center;
 }
 .settings_ a:hover {
@@ -49,9 +51,10 @@
     color: white;
     border: navajowhite;
     border-radius: 5px;
-    width: 200px;
+    width: 100%;
     padding: 7px 0px;
     cursor: pointer;
+    margin-top: 19px;
 }
 .changepass input[type="submit"]:hover {
     background-color: #9c0c0c;
@@ -59,7 +62,7 @@
     transition: .2s;
 }
 a.closeModal {
-    margin-left: 11px !important;
+    margin-left: 7px !important;
 }
 
 .activelink{
@@ -70,5 +73,40 @@ a.closeModal {
 .settings_.changepass input {
     border-radius: 5px;
     border-style: none;
-    border: 1px solid #bdbdbd;
+}
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+    margin-top: -20px;
+}
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem 0px 1rem;
+    background-color: transparent;
+    color: white;
+    border-bottom: transparent !important;
+    border-top-left-radius: 0px !important; 
+    border-top-right-radius: 0px !important; 
+}
+.profile_set{
+    width: 100%;
+}
+.modal-content {
+    background-color: transparent !important;
+    border: 0px !important;
+}
+div#changepass input:not(:last-child) {
+    color: black;
+}
+.settings_.changepass.adduser_ input:not(:last-child) {
+    color: black;
 }
