@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>Packetworx Gateway Management</title>
 </head>
 <body>
 <?php

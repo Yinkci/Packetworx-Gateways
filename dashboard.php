@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>Packetworx Gateway Management</title>
 </head>
 <body class="dashboard-view">
 <div class="menu col-md-10 col-md-2 col-xl-10 d-xl-block pd-left10">
