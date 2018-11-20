@@ -37,4 +37,10 @@
 	    display: block;
 	     position: relative; 
 	}
+	.controller .col-md-3{
+		padding: 10px !important;
+	}
+	.controller {
+    margin: 5px 28px !important;
+	}
 }

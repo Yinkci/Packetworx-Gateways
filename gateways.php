@@ -85,10 +85,10 @@
 	</div>
 <div class="controller">
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-md-3 p-0">
 			<a href="addgateway"><div class="gateway_btns">Add New Gateway</div></a>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-3 p-0">
 			<div class="">
 				<form method="POST" action="data/gatewaysDeleteAll" class="delForm">
 					<input type="submit" name="submit_dellAll" class="delAll" value="Delete All">

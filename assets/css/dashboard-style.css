@@ -154,10 +154,11 @@ button:focus {
     border-radius: 5px;
 }
 .controller div {
-    margin: 0px;
+    margin: 2px;
 }
 .controller {
     margin: 5px 28px;
+    margin-left: -5px;
 }
 .controller a:hover {
     text-decoration: none;
@@ -215,6 +216,9 @@ img.main-dashboard-logo {
     text-align: center;
     margin: auto;
     opacity: 0.2
+}
+.search-field input:last-child {
+    margin-right: 22px;
 }
 /*#cs-menu .menu-sen li a {
     color: red;
