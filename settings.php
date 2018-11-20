@@ -12,7 +12,8 @@
 
 <div class="settings-col col-md-4 col-md-12 col-xl-5 d-xl-block ">
 <?php
-$current_user = $row['username'];
+	$current_user = $row['username'];
+	$status= $row['status'];
 	$query = mysqli_query($con,"SELECT * FROM user WHERE username ='$current_user'");
 	$row = mysqli_num_rows($query);
 
@@ -36,7 +37,10 @@ $current_user = $row['username'];
 						<a href="changpass" data-toggle="modal" data-target="#changepass" >Change Password</a>
 					</div>
 					<div class="col-md-6">
+						<?php if($status=="admin"): ?>	
 						<a href="changpass" data-toggle="modal" data-target="#adduser">Add New User</a>
+						<?php else: ?>
+						<?php endif; ?>
 					</div>
 				</div>
 

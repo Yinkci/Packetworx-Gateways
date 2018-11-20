@@ -30,6 +30,7 @@
 			<th>Action</th> 
 		</tr>
 <?php
+ 	$status= $row['status'];
 	$query  = mysqli_query($con,"SELECT * FROM  gateways");
 	$row = mysqli_num_rows($query);
 	$x =1;
@@ -69,8 +70,14 @@
 			<td><?php echo $ssid; ?> </td>
 			<td><?php echo $site_location; ?> </td>
 			<td><?php echo $city; ?> </td>
-			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a> <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>'> Edit </a> <a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_"> Delete </a></td>
-		</tr>
+			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a>
+			<!-- Check if admin or editor -->
+			<?php if($status=="admin"): ?>			
+			 <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>'> Edit </a><a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_"> Delete </a>
+			<?php else: ?>
+			<?php endif; ?>
+		</tr> 
+		</td>
 		<?php 
 		// color counter interval
 		if($x==2):
