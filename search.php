@@ -28,6 +28,7 @@
 			<th>Action</th> 
 		</tr>
 <?php
+ 	$status= $row['status'];
 	$term = mysqli_real_escape_string($con,$_REQUEST['term']);    
 	$query  = mysqli_query($con,"SELECT * FROM gateways WHERE (gateway_id LIKE '%".$term."%' OR esn LIKE '%".$term."%'  )   ");
 	$row = mysqli_num_rows($query);
@@ -70,8 +71,12 @@
 			<td><?php echo $ssid; ?> </td>
 			<td><?php echo $site_location; ?> </td>
 			<td><?php echo $city; ?> </td>
-			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a> <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>'> Edit </a> <a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_"> Delete </a></td>
-	
+			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a>	
+			<!-- Check if admin or editor -->
+			<?php if($status=="Admin"): ?>			
+			 <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>'> Edit </a><a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_"> Delete </a>
+			<?php else: ?>
+			<?php endif; ?>
 		</tr>
 		<?php 
 		// color counter interval
@@ -94,14 +99,17 @@
 	</div>
 <div class="controller">
 	<div class="row">
-		<div class="col-md-3">
-			<div class="gateway_btns"><a href="addgateway">Add New Gateway</a></div>
+		<div class="col-md-3 p-0">
+			<a href="addgateway"><div class="gateway_btns">Add New Gateway</div></a>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-3 p-0">
 			<div class="">
+				<?php if($status=="Admin"): ?>
 				<form method="POST" action="data/gatewaysDeleteAll" class="delForm">
 					<input type="submit" name="submit_dellAll" class="delAll" value="Delete All">
 				</form>
+				<?php else: ?>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>
