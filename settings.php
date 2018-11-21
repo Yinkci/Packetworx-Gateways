@@ -62,7 +62,7 @@
 							<div class="id_user"></div><input type="hidden" name="id_user" value="<?php echo $id_user ?>">
 							<div class="username">Username</div><input type="text" name="username" value="">
 							<div class="password">Password</div><input type="password" name="password" value="" class="f_pass">
-							<div>Confirm Password</div><input type="password" name="password" value=""  class="confirm_password">
+							<div>Confirm Password</div><input type="password" name="password_confirm" value=""  class="confirm_password">
 							<div class="row">
 								<div class="col-md-6">
 									<input type="submit" name="" value="Submit" class="check_pass">
