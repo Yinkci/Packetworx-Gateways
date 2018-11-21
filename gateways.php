@@ -97,9 +97,12 @@
 		</div>
 		<div class="col-md-3 p-0">
 			<div class="">
+				<?php if($status=="Admin"): ?>
 				<form method="POST" action="data/gatewaysDeleteAll" class="delForm">
 					<input type="submit" name="submit_dellAll" class="delAll" value="Delete All">
 				</form>
+				<?php else: ?>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>
