@@ -79,7 +79,7 @@
 			<?php endif; ?>
 		</tr>
 		<?php 
-		// color counter interval
+		// color counter interval 
 		if($x==2):
 			$x=0;
 			$x++;
