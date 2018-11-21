@@ -63,7 +63,7 @@
 						<div><span>SSID :</span><input type="text" name="ssid" value="<?php echo $ssid; ?>"></div>
 						<div><span>Site :</span><input type="text" name="site_location" value="<?php echo $site_location; ?>"></div>
 						<div><span>City :</span><input type="text" name="city" value="<?php echo $city; ?>"></div> 
-						<div><span>TTI ID :</span><input  readonly class="readonly" type="text" name="tti_id" value="<?php echo $tti_id; ?>"></div> 
+						<div><span>TTI ID :</span><input  type="text" name="tti_id" value="<?php echo $tti_id; ?>"></div> 
 						<div><span>Longitude :</span><input type="text" name="lon" value="<?php echo $lon; ?>"></div> 
 						<div><span>Latitude :</span><input type="text" name="lat" value="<?php echo $lat; ?>"></div>
 						<div><span>Display Name :</span><input type="text" name="display_name" value="<?php echo $display_name; ?>"></div> 
