@@ -29,7 +29,7 @@
 				<div class="d-table">
 					<div class="d-cell">
 						<img src="assets/images/logo.png" class="d-none  d-xl-inline-block dashboard-logo">
-						<a href=""><i class="fas fa-user-circle"></i> Welcome,  <?php echo $row['username']; ?> !</a>
+						<a href="javascript:void(0);"><i class="fas fa-user-circle"></i> Welcome,  <?php echo $row['username']; ?> !</a>
 					</div>
 				</div>
 			</div>

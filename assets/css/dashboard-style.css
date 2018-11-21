@@ -220,6 +220,11 @@ img.main-dashboard-logo {
 .search-field input:last-child {
     margin-right: 22px;
 }
+body.dashboard-view iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
 /*#cs-menu .menu-sen li a {
     color: red;
     border-style: none;
