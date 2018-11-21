@@ -85,9 +85,15 @@ $(document).ready(function(){
       e.preventDefault();
   
     });
-// 
- 
-
+//
+   $('.check_pass').click(function(e){  
+    var x = $('.f_pass').val();
+    var y = $('.confirm_password').val();
+    if (x!=y) {
+    alert("Password didn't match!");
+     e.preventDefault();
+    };
+    });
 
 });
 
