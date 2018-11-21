@@ -2,8 +2,7 @@
 <?php require ("dashboard-header.php"); ?>
 <?php require ("config/database_con.php"); ?>
 <?php require ("inc/cs-functions.php"); ?>
-
-
+<?php $owner = $row['username']; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +16,15 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div><span>ESN :</span><input type="text" name="esn" value=""></div>
-						<div><span>Status :</span><input type="text" name="deployment_status" value=""></div> 
+						<div class="status_"><span>Status :</span><input type="hidden" name="deployment_status" value="Demo" id="selected_status">
+							<select onchange="document.getElementById('selected_status').value=this.options[this.selectedIndex].text">
+							<option value="demo" selected="">Demo</option>
+							<option value="onboarded"">Onboarded</option>
+							<option value="deployed" >Deployed</option>
+							<option value="installled" >Installled</option>
+							<option value="error">Error</option>
+							</select>
+						</div>
 						<div><span>Gateway ID :</span><input type="text" name="gateway_id" value="" required> </div>
 						<div><span>SSID :</span><input type="text" name="ssid" value=""></div>
 						<div><span>Site :</span><input type="text" name="site_location" value=""></div>
@@ -36,7 +43,7 @@
 						<div><span>Router Key :</span><input type="text" name="router_key" value=""></div>
 						<div><span>Gateway Key :</span><input type="text" name="gateway_key" value=""></div>
 						<div><span>Gateway Key :</span><input type="text" name="gateway_key" value=""></div>
-						<div><span>Owner :</span><input type="text" name="owner" value=""></div>
+						<div><span>Owner :</span><input type="text" name="owner" value="<?php echo $owner;?>"></div>
 						<div><span>Frequency :</span><input type="text" name="frequency" value=""></div>
 						<div><span>Antenna :</span><input type="text" name="antenna" value=""></div>
 					</div>
@@ -44,7 +51,7 @@
 						<div><span>Gateway Site ID :</span><input type="text" name="gateway_site_id" value=""></div>
 						<div><span>Contact :</span><input type="text" name="contact" value=""></div>
 						<div><span>Date Installed :</span><input type="date" data-date-inline-picker="true" type="text" name="date_installed" value=""></div>
-						<div><span>Care Of :</span><input type="text" name="care_of" value=""></div>
+						<div><span>Care Of :</span><input type="text" name="care_of" value="<?php echo $owner;?>"></div>
 						<div><span>Notes :</span><input type="text" name="notes" value=""></div>
 						<div><span>Gateway Username :</span><input type="text" name="gateway_username" value=""></div>
 						<div>

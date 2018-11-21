@@ -111,6 +111,9 @@ table.gateways-table input {
 
 }
 .view_gateways_edit select {
+    padding: 1px 30px;
+}
+.view_gateways_edit select:last-child {
     padding: 1px 60px;
 }
 
@@ -146,4 +149,9 @@ span.searchfound {
 }
 .form-chck form{
     margin:0px;
+}
+.status_ select {
+    padding: 1px !important;
+    width: 184px;
+
 }

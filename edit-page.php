@@ -50,7 +50,15 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div><span>ESN :</span><input type="text" name="esn" value="<?php echo $esn; ?>"></div>
-						<div><span>Status :</span><input type="text" name="deployment_status" value="<?php echo $deployment_status; ?>"></div> 
+						<div class="status_"><span>Status :</span><input type="hidden" name="deployment_status" value="<?php echo $deployment_status; ?>" id="selected_status">
+							<select onchange="document.getElementById('selected_status').value=this.options[this.selectedIndex].text">
+							<option value="demo" <?php if($deployment_status=="Demo"): echo "selected=''"; else:endif;?> >Demo</option>
+							<option value="onboarded"<?php if($deployment_status=="Onboarded"): echo "selected=''"; else:endif;?> >Onboarded</option>
+							<option value="deployed"<?php if($deployment_status=="Deployed"): echo "selected=''"; else:endif;?>  >Deployed</option>
+							<option value="installled"<?php if($deployment_status=="Installled"): echo "selected=''"; else:endif;?> >Installled</option>
+							<option value="error"<?php if($deployment_status=="Error"): echo "selected=''"; else:endif;?>>Error</option>
+							</select>
+						</div> 
 						<div><span>Gateway ID :</span><input  readonly class="readonly" type="text" name="gateway_id" value="<?php echo $gateway_id; ?>"> </div>
 						<div><span>SSID :</span><input type="text" name="ssid" value="<?php echo $ssid; ?>"></div>
 						<div><span>Site :</span><input type="text" name="site_location" value="<?php echo $site_location; ?>"></div>
