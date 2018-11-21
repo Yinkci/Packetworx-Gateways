@@ -44,7 +44,7 @@
 	$monitored = $rowx['monitored'];
 	}
 ?>
-<div class="menu col-md-10 col-md-10 col-xl-10 d-xl-block pd-left10">
+<div class="menu col-md-10 col-md-10 col-xl-10 d-xl-block pd-left10 form-chck">
 		<form method="POST" action="data/editPage">
 			<div class="view_gateways_edit">
 				<div class="row">
@@ -61,11 +61,11 @@
 						<div><span>Display Name :</span><input type="text" name="display_name" value="<?php echo $display_name; ?>"></div> 
 						<div><span>Mac Address :</span><input type="text" name="mac" value="<?php echo $mac; ?>"></div>
 						<div><span>Serial Number :</span><input type="text" name="serial_number" value="<?php echo $serial_number; ?>"></div> 
+					</div>
+					<div class="col-md-4">
 						<div><span>CTN Box Number :</span><input type="text" name="ctn_box_number" value="<?php echo $ctn_box_number; ?>"></div>
 						<div><span>SSID Key :</span><input type="text" name="ssid_key" value="<?php echo $ssid_key; ?>"></div>
 						<div><span>Router Username :</span><input type="text" name="router_username" value="<?php echo $router_username; ?>"></div> 
-					</div>
-					<div class="col-md-4">
 						<div><span>Router Key :</span><input type="text" name="router_key" value="<?php echo $router_key; ?>"></div>
 						<div><span>Gateway Key :</span><input type="text" name="gateway_key" value="<?php echo $gateway_key; ?>"></div>
 						<div><span>Gateway Key :</span><input type="text" name="gateway_key" value="<?php echo $gateway_key; ?>"></div>
@@ -74,9 +74,9 @@
 						<div><span>Antenna :</span><input type="text" name="antenna" value="<?php echo $antenna; ?>"></div>
 						<div><span>Gateway Site ID :</span><input type="text" name="gateway_site_id" value="<?php echo $gateway_site_id; ?>"></div>
 						<div><span>Contact :</span><input type="text" name="contact" value="<?php echo $contact; ?>"></div>
-						<div><span>Date Installed :</span><input type="date" data-date-inline-picker="true" name="date_installed" value="<?php echo $date_installed; ?>"></div>
 					</div>
 					<div class="col-md-4">
+						<div><span>Date Installed :</span><input type="date" data-date-inline-picker="true" name="date_installed" value="<?php echo $date_installed; ?>"></div>
 						<div><span>Care Of :</span><input type="text" name="care_of" value="<?php echo $care_of; ?>"></div>
 						<div><span>Notes :</span><input type="text" name="notes" value="<?php echo $notes; ?>"></div>
 						<div><span>Gateway Username :</span><input type="text" name="gateway_username" value="<?php echo $gateway_username; ?>"></div>
