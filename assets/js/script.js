@@ -31,6 +31,9 @@ $(document).ready(function(){
     	}
   
     });
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// DELETE ALL GATEWAYS
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
    $('.delAll').click(function(e){ 
       e.preventDefault();
@@ -56,6 +59,30 @@ $(document).ready(function(){
      else {
        
       }
+  
+    });
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
+// ADD NEW USER
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+   $('.addUser_ajax').click(function(e){ 
+      var form = $("#addUserForm");
+      var url = form.attr('action');
+      $.ajax({
+           type: "POST",
+           url: url,
+           data: form.serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+             $(".success_new_user").html("Succesfully added new user");
+
+           },
+            error: function () {
+                    alert("Something Went Wrong");
+                }
+         });
+      e.preventDefault();
   
     });
 

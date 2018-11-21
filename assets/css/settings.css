@@ -115,3 +115,6 @@ div#changepass input:not(:last-child) {
     padding: 5px;
     border-radius: 5px;
 }
+.success_new_user {
+    margin: 10px 3px;
+}
