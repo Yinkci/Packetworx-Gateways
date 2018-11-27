@@ -80,7 +80,7 @@ $(document).ready(function(){
            data: form.serialize(), // serializes the form's elements.
            success: function(data)
            {
-             $(".success_new_user").html("Succesfully added new user");
+             $(".success_new_user").html(data);
 
            },
             error: function () {
@@ -99,6 +99,16 @@ $(document).ready(function(){
      e.preventDefault();
     };
     });
+
+});
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
+// CHECK INPUT FIELD IN ADDING GATEWAYS
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  $(document).on('click','.action-edit-save',function(){
+alert("sd");
 
 });
 

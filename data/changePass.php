@@ -11,10 +11,10 @@ require ("../inc/cs-functions.php");
 
 
 
-$query = mysqli_query($con,"UPDATE  user SET username='$username',password='$password' WHERE id_user='$id_user' " );
+$query = pg_query($con,"UPDATE  public.user SET username='$username',password='$password' WHERE id_user='$id_user' " );
 
 
-mysqli_close($con);
+pg_close($con);
 header("location:".home_url()."/settings");
 
 

@@ -14,10 +14,10 @@
 <?php
 	$current_user = $row['username'];
 	$status= $row['status'];
-	$query = mysqli_query($con,"SELECT * FROM user WHERE username ='$current_user'");
-	$row = mysqli_num_rows($query);
+	$query =pg_query($con,"SELECT * FROM public.user WHERE username ='$current_user'");
+	$row =pg_num_rows($query);
 
-	while($rowx = mysqli_fetch_array($query)){
+	while($rowx =pg_fetch_array($query)){
 	$username = $rowx['username'];
 	$password = $rowx['password'];
 	$id_user = $rowx['id_user'];
@@ -79,6 +79,26 @@
 			    </div>
 			</div>
 		</div>
+						<?php 
+						$args = pg_query($con,"SELECT * FROM public.user ORDER BY id_user");
+						// $row = pg_num_rows($args);
+// 						$x=0;
+// 						$y=0;
+// 						$_username = "";
+// 						$items=array();
+
+// 						while($throw = pg_fetch_array($args)){
+// 						// $x = $throw["username"];
+// 						// ${"user_".$x} = $throw["username"];
+// 						// $x++;
+// 						$username = $row['username'];
+// $user = array($username);
+// 						}
+						pg_close($con);
+// var_dump($user);
+						// echo 
+						?>
+
 		<!--Add user modal -->
 		<div class="modal fade" id="adduser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false" style="background-color: rgba(0, 0, 0, 0.5);">
 			<div class="modal-dialog" role="document">
@@ -89,6 +109,8 @@
 			        <div class="modal-body">
 			        	
 					<form method="POST" action="data/addUser" id="addUserForm">
+		
+
 						<div class="settings_ changepass adduser_">
 							<div class="id_user"></div><input type="hidden" name="id_user" value="<?php echo $id_user ?>">
 							<div class="status">Role</div><input type="hidden" name="status" id="selected_role" value="<?php echo $status ?>">

@@ -34,10 +34,10 @@ require ("../inc/cs-functions.php");
 	$monitored = $_POST['monitored']?: 'N/A' ;
 
 
-$query = mysqli_query($con,"UPDATE  gateways SET gateway_id='$gateway_id',tti_id='$tti_id',lon='$lon',lat='$lat',display_name='$display_name',deployment_status='$deployment_status',esn='$esn',mac='$mac',serial_number='$serial_number',ctn_box_number='$ctn_box_number',ssid='$ssid',ssid_key='$ssid_key',router_username='$router_username',router_key='$router_key',gateway_key='$gateway_key',owner='$owner',frequency='$frequency',antenna='$antenna',gateway_site_id='$gateway_site_id',site_location='$site_location',city='$city',contact='$contact',date_installed='$date_installed',care_of='$care_of',notes='$notes',gateway_username='$gateway_username',monitored='$monitored' WHERE gateway_id = '$gateway_id'");
+$query = pg_query($con,"UPDATE  public.gateways SET gateway_id='$gateway_id',tti_id='$tti_id',lon='$lon',lat='$lat',display_name='$display_name',deployment_status='$deployment_status',esn='$esn',mac='$mac',serial_number='$serial_number',ctn_box_number='$ctn_box_number',ssid='$ssid',ssid_key='$ssid_key',router_username='$router_username',router_key='$router_key',gateway_key='$gateway_key',owner='$owner',frequency='$frequency',antenna='$antenna',gateway_site_id='$gateway_site_id',site_location='$site_location',city='$city',contact='$contact',date_installed='$date_installed',care_of='$care_of',notes='$notes',gateway_username='$gateway_username',monitored='$monitored' WHERE gateway_id = '$gateway_id'");
 
 
-mysqli_close($con);
+pg_close($con);
 header("location:".home_url()."/gateways");
 
 

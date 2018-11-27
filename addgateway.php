@@ -30,7 +30,7 @@
 						<div><span>Site :</span><input type="text" name="site_location" value=""></div>
 						<div><span>City :</span><input type="text" name="city" value=""></div> 
 						<div><span>TTI ID :</span><input type="text" name="tti_id" value="" required></div> 
-						<div><span>Longitude :</span><input type="text" name="lon" value=""></div> 
+						<div><span>Longitude :</span><input type="number" name="lon" value=""></div> 
 						<div><span>Latitude :</span><input type="text" name="lat" value=""></div>
 						<div><span>Display Name :</span><input type="text" name="display_name" value=""></div> 
 						<div><span>Mac Address :</span><input type="text" name="mac" value=""></div>
@@ -56,19 +56,12 @@
 						<div><span>Gateway Username :</span><input type="text" name="gateway_username" value=""></div>
 						<div>
 							<span>Monitor :</span>
-							<?php $monitored = "Yes" ?>
+							<?php $monitored = "True" ?>
 							<input type="hidden" name="monitored" value="<?php echo $monitored; ?>" id="selected_text" >
-					 	 	<?php  if($monitored=="No"): ?>
 							<select onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
-							<option value="yes">Yes</option>
-							<option value="no" selected="">No</option>
+							<option value="yes">True</option>
+							<option value="no" >False</option>
 							</select>
-							<?php else: ?>
-							<select onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
-							<option value="yes" selected>Yes</option>
-							<option value="no" >No</option>
-							</select>
-							<?php endif; ?> 
 						</div>
 						<div class="edit_submit"><input type="submit" name="submit_add" value="ADD" class="action-edit-save"></div>
 						<div class="edit_back"><a href="dashboard">BACK</a></div>

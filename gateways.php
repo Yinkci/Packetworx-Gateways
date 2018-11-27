@@ -31,10 +31,10 @@
 		</tr>
 <?php
  	$status= $row['status'];
-	$query  = mysqli_query($con,"SELECT * FROM  gateways");
-	$row = mysqli_num_rows($query);
+	$query  = pg_query($con,"SELECT * FROM  public.gateways");
+	$row = pg_num_rows($query);
 	$x =1;
-	while($rowx = mysqli_fetch_array($query)){
+	while($rowx = pg_fetch_assoc($query)){
 	$gateway_id = $rowx['gateway_id'];
 	$tti_id = $rowx['tti_id'];
 	$lon = $rowx['lon'];

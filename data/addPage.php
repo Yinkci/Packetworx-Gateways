@@ -38,9 +38,9 @@ if (isset($_POST["submit_add"])) {
 
 
 
-$query = mysqli_query($con,"INSERT INTO gateways(gateway_id,tti_id,lon,lat,display_name,deployment_status,esn,mac,serial_number,ctn_box_number,ssid,ssid_key,router_username,router_key,gateway_key,owner,frequency,antenna,gateway_site_id,site_location,city,contact,date_installed,care_of,notes,gateway_username,monitored)VALUES('$gateway_id','$tti_id','$lon','$lat','$display_name','$deployment_status','$esn','$mac','$serial_number','$ctn_box_number','$ssid','$ssid_key','$router_username','$router_key','$gateway_key','$owner','$frequency','$antenna','$gateway_site_id','$site_location','$city','$contact','$date_installed','$care_of','$notes','$gateway_username','$monitored')");
+$query = pg_query($con,"INSERT INTO gateways(gateway_id,tti_id,lon,lat,display_name,deployment_status,esn,mac,serial_number,ctn_box_number,ssid,ssid_key,router_username,router_key,gateway_key,owner,frequency,antenna,gateway_site_id,site_location,city,contact,date_installed,care_of,notes,gateway_username,monitored)VALUES('$gateway_id','$tti_id','$lon','$lat','$display_name','$deployment_status','$esn','$mac','$serial_number','$ctn_box_number','$ssid','$ssid_key','$router_username','$router_key','$gateway_key','$owner','$frequency','$antenna','$gateway_site_id','$site_location','$city','$contact','$date_installed','$care_of','$notes','$gateway_username','$monitored')");
 
-mysqli_close($con);
+pg_close($con);
 header("location:".home_url()."/gateways");
 
 

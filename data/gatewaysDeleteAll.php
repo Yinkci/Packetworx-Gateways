@@ -1,8 +1,8 @@
 <?php 
 require ("../config/database_con.php"); 
 
-$query = mysqli_query($con,"DELETE FROM gateways");
-mysqli_close($con);
+$query = pg_query($con,"DELETE FROM gateways");
+pg_close($con);
 
 ?>
 

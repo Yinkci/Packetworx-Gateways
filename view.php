@@ -12,10 +12,10 @@
 <body>
 <?php
 	$PageName = $_GET['view']; 
-	$query = mysqli_query($con,"SELECT * FROM gateways where esn = '$PageName'  ");
-	$row = mysqli_num_rows($query);
+	$query = pg_query($con,"SELECT * FROM gateways where esn = '$PageName'  ");
+	$row = pg_num_rows($query);
 
-	while($rowx = mysqli_fetch_array($query)){
+	while($rowx = pg_fetch_array($query)){
 	$gateway_id = $rowx['gateway_id'];
 	$tti_id = $rowx['tti_id'];
 	$lon = $rowx['lon'];
@@ -43,6 +43,12 @@
 	$notes = $rowx['notes'];
 	$gateway_username = $rowx['gateway_username'];
 	$monitored = $rowx['monitored'];
+
+	if($monitored=="t"):
+		$monitored ="True";
+	else:
+		$monitored ="False";
+	endif;
 
 	}
 

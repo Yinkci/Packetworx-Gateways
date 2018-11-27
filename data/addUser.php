@@ -4,25 +4,23 @@ ob_start();
 
 require ("../config/database_con.php"); 
 // require ("../inc/cs-functions.php"); 
+;
 
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$id_user = $_POST['id_user'];
 	$status = $_POST['status'];
 
+$query_ = pg_query($con,"SELECT * FROM public.user WHERE username='$username'");
 
-
-echo $id_user;
-
-
-$query = mysqli_query($con,"INSERT INTO user(id_user, status, username, password) VALUES ('$id_user','$status','$username','$password')" );
-
-mysqli_close($con);
-// header("location:".home_url()."/settings");
-
-
-
-
+	if (pg_num_rows($query_) != 0):
+	  echo "Username already exists";
+	else:
+		$query = pg_query($con,"INSERT INTO public.user(id_user, status, username, password) VALUES ('$id_user','$status','$username','$password')" );
+		pg_close($con);
+		echo "Succesfully added new user";
+		// header("location:".home_url()."/settings");
+	endif;
 
 
   ?>

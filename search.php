@@ -29,11 +29,11 @@
 		</tr>
 <?php
  	$status= $row['status'];
-	$term = mysqli_real_escape_string($con,$_REQUEST['term']);    
-	$query  = mysqli_query($con,"SELECT * FROM gateways WHERE (gateway_id LIKE '%".$term."%' OR esn LIKE '%".$term."%'  )   ");
-	$row = mysqli_num_rows($query);
+	$term = pg_escape_string($con,$_REQUEST['term']);    
+	$query  = pg_query($con,"SELECT * FROM gateways WHERE (gateway_id LIKE '%".$term."%' OR esn LIKE '%".$term."%'  )   ");
+	$row = pg_num_rows($query);
 	$x =1;
-	while($rowx = mysqli_fetch_array($query)){
+	while($rowx = pg_fetch_array($query)){
 	$gateway_id = $rowx['gateway_id'];
 	$tti_id = $rowx['tti_id'];
 	$lon = $rowx['lon'];

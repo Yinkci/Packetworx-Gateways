@@ -12,9 +12,9 @@
 <body>
 <?php
 	$PageName = $_GET['edit']; 
-	$query = mysqli_query($con,"SELECT * FROM gateways where esn = '$PageName'  ");
-	$row = mysqli_num_rows($query);
-	while($rowx = mysqli_fetch_array($query)){
+	$query = pg_query($con,"SELECT * FROM gateways where esn = '$PageName'  ");
+	$row = pg_num_rows($query);
+	while($rowx = pg_fetch_array($query)){
 	$gateway_id = $rowx['gateway_id'];
 	$tti_id = $rowx['tti_id'];
 	$lon = $rowx['lon'];
