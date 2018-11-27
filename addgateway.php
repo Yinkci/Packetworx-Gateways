@@ -30,8 +30,8 @@
 						<div><span>Site :</span><input type="text" name="site_location" value=""></div>
 						<div><span>City :</span><input type="text" name="city" value=""></div> 
 						<div><span>TTI ID :</span><input type="text" name="tti_id" value="" required></div> 
-						<div><span>Longitude :</span><input type="number" name="lon" value=""></div> 
-						<div><span>Latitude :</span><input type="text" name="lat" value=""></div>
+						<div><span>Longitude :</span><input type="number" name="lon" value="" step="any"></div> 
+						<div><span>Latitude :</span><input type="text" name="lat" value="" step="any"></div>
 						<div><span>Display Name :</span><input type="text" name="display_name" value=""></div> 
 						<div><span>Mac Address :</span><input type="text" name="mac" value=""></div>
 					</div>

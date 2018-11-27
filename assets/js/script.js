@@ -107,10 +107,10 @@ $(document).ready(function(){
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-  $(document).on('click','.action-edit-save',function(){
-alert("sd");
+//   $(document).on('click','.action-edit-save',function(){
+// alert("sd");
 
-});
+// });
 
 
 })(jQuery);
