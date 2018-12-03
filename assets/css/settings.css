@@ -118,3 +118,24 @@ div#changepass input:not(:last-child) {
 .success_new_user {
     margin: 10px 3px;
 }
+.user-col {
+    margin: 20px 0px 0px 0px;
+}
+
+.new_user{
+    background-color: brown;
+    color: white;
+    padding: 7px 20px;
+    display: inline-block;
+    margin: 2px 0px 0px 0px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+.new_user:hover{
+    background-color: #9c0c0c;
+    transition: .2s;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;  
+}

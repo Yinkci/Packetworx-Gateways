@@ -42,8 +42,7 @@
 						<div><span>Router Username :</span><input type="text" name="router_username" value=""></div> 
 						<div><span>Router Key :</span><input type="text" name="router_key" value=""></div>
 						<div><span>Gateway Key :</span><input type="text" name="gateway_key" value=""></div>
-						<div><span>Gateway Key :</span><input type="text" name="gateway_key" value=""></div>
-						<div><span>Owner :</span><input type="text" name="owner" value="<?php echo $owner;?>"></div>
+						<div><span>Owner :</span><input type="text" name="owner" value=""></div>
 						<div><span>Frequency :</span><input type="text" name="frequency" value=""></div>
 						<div><span>Antenna :</span><input type="text" name="antenna" value=""></div>
 					</div>
@@ -51,7 +50,7 @@
 						<div><span>Gateway Site ID :</span><input type="text" name="gateway_site_id" value=""></div>
 						<div><span>Contact :</span><input type="text" name="contact" value=""></div>
 						<div><span>Date Installed :</span><input type="date" data-date-inline-picker="true" type="text" name="date_installed" value=""></div>
-						<div><span>Care Of :</span><input type="text" name="care_of" value="<?php echo $owner;?>"></div>
+						<div><span>Care Of :</span><input type="text" name="care_of" value=""></div>
 						<div><span>Notes :</span><input type="text" name="notes" value=""></div>
 						<div><span>Gateway Username :</span><input type="text" name="gateway_username" value=""></div>
 						<div>

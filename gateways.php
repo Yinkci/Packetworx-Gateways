@@ -21,13 +21,15 @@
 		<form action="" method="POST">
 		<table class="gateways-table">
 		<tr class="all_title_tr">
-			<th>ESN</th>
-			<th>Status</th> 
 			<th>Gateway ID</th>
-			<th>SSID</th>
+			<th>Status</th> 
+			<th>ESN</th>
+			<th>Serial No.</th>
 			<th>Site</th> 
 			<th>City</th> 
+			<th>Owner</th>
 			<th>Action</th> 
+
 		</tr>
 <?php
  	$status= $row['status'];
@@ -64,12 +66,13 @@
 	$monitored = $rowx['monitored'];
 ?>
 	<tr class="<?php echo "esn_".$gateway_id ?> clr_<?php echo $x?>">
-			<td><?php echo $esn; ?> </td>
-			<td><?php echo $deployment_status; ?> </td>
 			<td><?php echo $gateway_id; ?> </td>
-			<td><?php echo $ssid; ?> </td>
+			<td><?php echo $deployment_status; ?> </td>
+			<td><?php echo $esn; ?> </td>
+			<td><?php echo $serial_number; ?> </td>
 			<td><?php echo $site_location; ?> </td>
 			<td><?php echo $city; ?> </td>
+			<td><?php echo $owner; ?> </td>
 			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a>
 			<!-- Check if admin or editor -->
 			<?php if($status=="Admin"): ?>			
