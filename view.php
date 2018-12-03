@@ -30,39 +30,39 @@
 			<div class="view_gateways_view">
 				<div class="row">
 					<div class="col-md-4">
-						<div><span>ESN :</span><input disabled="true" type="text" name="esn" value="<?php echo $esn; ?>"></div>
-						<div><span>Status :</span><input disabled="true" type="text" name="deployment_status" value="<?php echo $deployment_status; ?>"></div> 
-						<div><span>Gateway ID :</span><input  disabled="true" type="text" name="gateway_id" value="<?php echo $gateway_id; ?>"> </div>
-						<div><span>SSID :</span><input  disabled="true" type="text" name="ssid" value="<?php echo $ssid; ?>" id="text"></div>
-						<div><span>Site :</span><input  disabled="true" type="text" name="site_location" value="<?php echo $site_location; ?>"></div>
-						<div><span>City :</span><input disabled="true"  type="text" name="city" value="<?php echo $city; ?>"></div> 
-						<div><span>TTI ID :</span><input  disabled="true" type="text" name="tti_id" value="<?php echo $tti_id; ?>"></div> 
-						<div><span>Longitude :</span><input  disabled="true" type="text" name="lon" value="<?php echo $lon; ?>"></div> 
-						<div><span>Latitude :</span><input  disabled="true" type="text" name="lat" value="<?php echo $lat; ?>"></div>
-						<div><span>Display Name :</span><input  disabled="true" type="text" name="display_name" value="<?php echo $display_name; ?>"></div> 
-						<div><span>Mac Address :</span><input  disabled="true" type="text" name="mac" value="<?php echo $mac; ?>"></div>
-						<div><span>Serial Number :</span><input  disabled="true" type="text" name="serial_number" value="<?php echo $serial_number; ?>"></div> 
+						<div><span>ESN :</span><textarea disabled="true"><?php echo $esn; ?></textarea></div>
+						<div><span>Status :</span><textarea disabled="true"><?php echo $deployment_status; ?></textarea></div> 
+						<div><span>Gateway ID :</span><textarea disabled="true"><?php echo $gateway_id; ?></textarea></div>
+						<div><span>SSID :</span><textarea disabled="true"><?php echo $ssid; ?></textarea> </div>
+						<div><span>Site :</span><textarea disabled="true"><?php echo $site_location; ?></textarea></div>
+						<div><span>City :</span><textarea disabled="true"><?php echo $city; ?></textarea></div> 
+						<div><span>TTI ID :</span><textarea disabled="true"><?php echo $tti_id; ?></textarea></div> 
+						<div><span>Longitude :</span><textarea disabled="true"><?php echo $lon; ?></textarea> </div> 
+						<div><span>Latitude :</span><textarea disabled="true"><?php echo $lat; ?></textarea></div>
+						<div><span>Display Name :</span><textarea disabled="true"><?php echo $display_name; ?></textarea></div> 
+						<div><span>Mac Address :</span><textarea disabled="true"><?php echo $mac; ?></textarea></div>
+						<div><span>Serial Number :</span><textarea disabled="true"><?php echo $serial_number; ?></textarea></div> 
 						
 					</div>
 					<div class="col-md-4">
-						<div><span>CTN Box Number :</span><input  disabled="true" type="text" name="ctn_box_number" value="<?php echo $ctn_box_number; ?>"></div>
-						<div><span>SSID Key :</span><input  disabled="true" type="text" name="ssid_key" value="<?php echo $ssid_key; ?>"></div>
-						<div><span>Router Username :</span><input  disabled="true" type="text" name="router_username" value="<?php echo $router_username; ?>"></div> 
-						<div><span>Router Key :</span><input  disabled="true" type="text" name="router_key" value="<?php echo $router_key; ?>"></div>
-						<div><span>Gateway Key :</span><input  disabled="true" type="text" name="gateway_key" value="<?php echo $gateway_key; ?>"></div>
-						<div><span>Gateway Key :</span><input  disabled="true" type="text" name="gateway_key" value="<?php echo $gateway_key; ?>"></div>
-						<div><span>Owner :</span><input  disabled="true" type="text" name="owner" value="<?php echo $owner; ?>"></div>
-						<div><span>Frequency :</span><input  disabled="true" type="text" name="frequency" value="<?php echo $frequency; ?>"></div>
-						<div><span>Antenna :</span><input  disabled="true" type="text" name="antenna" value="<?php echo $antenna; ?>"></div>
-						<div><span>Gateway Site ID :</span><input  disabled="true" type="text" name="gateway_site_id" value="<?php echo $gateway_site_id; ?>"></div>
-						<div><span>Contact :</span><input  disabled="true" type="text" name="contact" value="<?php echo $contact; ?>"></div>
+						<div><span>CTN Box Number :</span><textarea disabled="true"><?php echo $ctn_box_number; ?></textarea></div>
+						<div><span>SSID Key :</span><textarea disabled="true"><?php echo $ssid_key; ?></textarea></div>
+						<div><span>Router Username :</span><textarea disabled="true"><?php echo $router_username; ?></textarea></div> 
+						<div><span>Router Key :</span><textarea disabled="true"><?php echo $router_key; ?></textarea></div>
+						<div><span>Gateway Key :</span><textarea disabled="true"><?php echo $gateway_key; ?></textarea></div>
+						<div><span>Gateway Key :</span><textarea disabled="true"><?php echo $gateway_key; ?></textarea></div>
+						<div><span>Owner :</span><textarea disabled="true"><?php echo $owner; ?></textarea></div>
+						<div><span>Frequency :</span><textarea disabled="true"><?php echo $frequency; ?></textarea></div>
+						<div><span>Antenna :</span><textarea disabled="true"><?php echo $antenna; ?></textarea></div>
+						<div><span>Gateway Site ID :</span><textarea disabled="true"><?php echo $gateway_site_id; ?></textarea></div>
+						<div><span>Contact :</span><textarea disabled="true"><?php echo $contact; ?></textarea></div>
 					</div>
 					<div class="col-md-4">
-						<div><span>Date Installed :</span><input  disabled="true" type="text" name="date_installed" value="<?php echo $date_installed; ?>"></div>
-						<div><span>Care Of :</span><input  disabled="true" type="text" name="care_of" value="<?php echo $care_of; ?>"></div>
-						<div><span>Notes :</span><input  disabled="true" type="text" name="notes" value="<?php echo $notes; ?>"></div>
-						<div><span>Gateway Username :</span><input  disabled="true" type="text" name="gateway_username" value="<?php echo $gateway_username; ?>"></div>
-						<div><span>Monitor :</span><input  disabled="true" type="text" name="monitored" value="<?php echo $monitored; ?>"></div>
+						<div><span>Date Installed :</span><textarea disabled="true"><?php echo $date_installed; ?></textarea></div>
+						<div><span>Care Of :</span><textarea disabled="true"><?php echo $care_of; ?></textarea></div>
+						<div><span>Notes :</span><textarea disabled="true"><?php echo $notes; ?></textarea></div>
+						<div><span>Gateway Username :</span><textarea disabled="true"><?php echo $gateway_username; ?></textarea></div>
+						<div><span>Monitor :</span><textarea disabled="true"><?php echo $monitored; ?></textarea></div>
 						<div class="view_back"><a href="gateways">BACK</a></div>
 					</div>
 				</div>
