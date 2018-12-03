@@ -24,16 +24,5 @@
 			</div>
 		</div>
 	</div>
-
-	<?php
-// require ("config/database_con.php");
-// 		$query = pg_query($con,"SELECT * FROM public.user");
-// 		$row = pg_num_rows($query);
-
-// while ($rowx = pg_fetch_row($query)) {
-// echo $rowx[1];
-// }
-
-	?>
 </body>
 </html>

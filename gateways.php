@@ -2,8 +2,6 @@
 <?php require ("dashboard-header.php"); ?>
 <?php require ("config/database_con.php"); ?>
 <?php require ("inc/cs-functions.php"); ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +27,6 @@
 			<th>City</th> 
 			<th>Owner</th>
 			<th>Action</th> 
-
 		</tr>
 <?php
  	$status= $row['status'];
@@ -89,7 +86,7 @@
 		else:
 			$x++;
 		endif;
-		} ?><!-- end og while -->
+		} ?><!-- end of while -->
 		</table>
 		</form>
 	</div>
@@ -111,6 +108,5 @@
 	</div>
 </div>
 </div><!-- end of col 10 -->
-
 </div><!-- end of row dashbpard-header -->
 </html>

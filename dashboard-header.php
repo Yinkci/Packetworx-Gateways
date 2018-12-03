@@ -1,4 +1,5 @@
 <?php include ("inc/links.php");?>
+<?php  $status= $row['status']; ?>
 <!-- MOBILE MENU -->
 <div id="my-wrapper-cs-menu" >       
 	<nav id="cs-menu" class="cs-menu">
@@ -8,7 +9,6 @@
 			<li><a href="#"><i class="fas fa-user-circle"></i>Users</a></li>
 			<li><a href="settings"><i class="fas fa-cog"></i>Settings</a></li>
 			<li><a href="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-
 		</ul>
 	</nav>
 </div>
@@ -45,7 +45,9 @@
 				?>
 				<li class="<?php if($currentPage=="dashboard"):echo "activelink"; else: endif; ?>"><a href="dashboard"><i class="fas fa-code"></i> Dashboard</a></li>
 				<li class="<?php if($currentPage=="gateways" || $currentPage=="edit-page" || $currentPage=="view"  ):echo "activelink"; else: endif; ?>"><a href="gateways"><i class="fas fa-th-list"></i> Gateways</a></li>
+				<?php if($status=="Admin"): ?>	
 				<li class="<?php if($currentPage=="users"):echo "activelink"; else: endif; ?>"><a href="users"><i class="fas fa-user-circle""></i> Users</a></li>
+				<?php else: endif;?>
 				<li class="<?php if($currentPage=="settings"):echo "activelink"; else: endif; ?>"><a href="settings"><i class="fas fa-cog"></i> Settings</a></li>
 				<!-- <li class="<?php echo $currentPage ?>"><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li> -->
 				<li class="<?php if($currentPage=="logout"):echo "activelink"; else: endif; ?>"><a href="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>

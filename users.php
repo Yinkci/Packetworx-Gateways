@@ -2,7 +2,6 @@
 <?php require ("dashboard-header.php"); ?>
 <?php require ("config/database_con.php"); ?>
 <?php require ("inc/cs-functions.php"); ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -98,8 +97,5 @@
 				</div>
 			</div>
 		</div>
-
-
-
-	</body>
-	</html>
+</body>
+</html>
