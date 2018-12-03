@@ -49,7 +49,7 @@
 					<div class="col-md-4">
 						<div><span>Gateway Site ID :</span><input type="text" name="gateway_site_id" value=""></div>
 						<div><span>Contact :</span><input type="text" name="contact" value=""></div>
-						<div><span>Date Installed :</span><input type="date" data-date-inline-picker="true" type="text" name="date_installed" value=""></div>
+						<div><span>Date Installed :</span><input type="date" data-date-inline-picker="true" type="text" name="date_installed" value="" required></div>
 						<div><span>Care Of :</span><input type="text" name="care_of" value=""></div>
 						<div><span>Notes :</span><input type="text" name="notes" value=""></div>
 						<div><span>Gateway Username :</span><input type="text" name="gateway_username" value=""></div>

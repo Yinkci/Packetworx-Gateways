@@ -225,6 +225,9 @@ body.dashboard-view iframe {
     height: 100vh;
     border: none;
 }
+table.gateways-table th:nth-child(2), table.gateways-table th:nth-child(3) {
+    min-width: 111px !important;
+}
 /*#cs-menu .menu-sen li a {
     color: red;
     border-style: none;
