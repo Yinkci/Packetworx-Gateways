@@ -33,7 +33,7 @@
 						<div><span>ESN :</span><input disabled="true" type="text" name="esn" value="<?php echo $esn; ?>"></div>
 						<div><span>Status :</span><input disabled="true" type="text" name="deployment_status" value="<?php echo $deployment_status; ?>"></div> 
 						<div><span>Gateway ID :</span><input  disabled="true" type="text" name="gateway_id" value="<?php echo $gateway_id; ?>"> </div>
-						<div><span>SSID :</span><input  disabled="true" type="text" name="ssid" value="<?php echo $ssid; ?>"></div>
+						<div><span>SSID :</span><input  disabled="true" type="text" name="ssid" value="<?php echo $ssid; ?>" id="text"></div>
 						<div><span>Site :</span><input  disabled="true" type="text" name="site_location" value="<?php echo $site_location; ?>"></div>
 						<div><span>City :</span><input disabled="true"  type="text" name="city" value="<?php echo $city; ?>"></div> 
 						<div><span>TTI ID :</span><input  disabled="true" type="text" name="tti_id" value="<?php echo $tti_id; ?>"></div> 
