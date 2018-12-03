@@ -13,33 +13,7 @@
 	$query = pg_query($con,"SELECT * FROM gateways where esn = '$PageName'  ");
 	$row = pg_num_rows($query);
 	while($rowx = pg_fetch_array($query)){
-	$gateway_id = $rowx['gateway_id'];
-	$tti_id = $rowx['tti_id'];
-	$lon = $rowx['lon'];
-	$lat = $rowx['lat'];
-	$display_name = $rowx['display_name'];
-	$deployment_status = $rowx['deployment_status'];
-	$esn = $rowx['esn'];
-	$mac = $rowx['mac'];
-	$serial_number = $rowx['serial_number'];
-	$ctn_box_number = $rowx['ctn_box_number'];
-	$ssid = $rowx['ssid'];
-	$ssid_key = $rowx['ssid_key'];
-	$router_username = $rowx['router_username'];
-	$router_key = $rowx['router_key'];
-	$gateway_key = $rowx['gateway_key'];
-	$owner = $rowx['owner'];
-	$frequency  = $rowx['frequency'];
-	$antenna = $rowx['antenna'];
-	$gateway_site_id = $rowx['gateway_site_id'];
-	$site_location = $rowx['site_location'];
-	$city = $rowx['city'];
-	$contact = $rowx['gateway_site_id'];
-	$date_installed = $rowx['date_installed'];
-	$care_of = $rowx['care_of']; 
-	$notes = $rowx['notes'];
-	$gateway_username = $rowx['gateway_username'];
-	$monitored = $rowx['monitored'];
+	include("inc/sql-statements.php");
 	}
 ?>
 <div class="menu col-md-10 col-md-10 col-xl-10 d-xl-block pd-left10 form-chck">
@@ -74,7 +48,6 @@
 					<div><span>Router Username :</span><input type="text" name="router_username" value="<?php echo $router_username; ?>"></div> 
 					<div><span>Router Key :</span><input type="text" name="router_key" value="<?php echo $router_key; ?>"></div>
 					<div><span>Gateway Key :</span><input type="text" name="gateway_key" value="<?php echo $gateway_key; ?>"></div>
-					<div><span>Gateway Key :</span><input type="text" name="gateway_key" value="<?php echo $gateway_key; ?>"></div>
 					<div><span>Owner :</span><input type="text" name="owner" value="<?php echo $owner; ?>"></div>
 					<div><span>Frequency :</span><input type="text" name="frequency" value="<?php echo $frequency; ?>"></div>
 					<div><span>Antenna :</span><input type="text" name="antenna" value="<?php echo $antenna; ?>"></div>
@@ -89,15 +62,15 @@
 					<div>
 						<span>Monitor :</span>
 						<input type="hidden" name="monitored" value="<?php echo $monitored; ?>" id="selected_text" >
-				 	 	<?php  if($monitored=="No"): ?>
+				 	 	<?php  if($monitored=="f"): ?>
 						<select onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
-						<option value="yes">Yes</option>
-						<option value="no" selected="">No</option>
+						<option value="yes">True</option>
+						<option value="no" selected="">False</option>
 						</select>
 						<?php else: ?>
 						<select onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
-						<option value="yes" selected>Yes</option>
-						<option value="no" >No</option>
+						<option value="yes" selected>True</option>
+						<option value="no" >False</option>
 						</select>
 						<?php endif; ?> 
 					</div>

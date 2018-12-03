@@ -7,8 +7,8 @@ require ("../inc/cs-functions.php");
 if (isset($_POST["submit_add"])) {
 	$gateway_id = $_POST['gateway_id']?: 'N/A' ;
 	$tti_id = $_POST['tti_id']?: 'N/A' ;
-	$lon = $_POST['lon']?: 'N/A' ;
-	$lat = $_POST['lat']?: 'N/A' ;
+	$lon = $_POST['lon']?: '0.00' ;
+	$lat = $_POST['lat']?: '0.00' ;
 	$display_name = $_POST['display_name']?: 'N/A' ;
 	$deployment_status = $_POST['deployment_status']?: 'N/A' ;
 	$esn = $_POST['esn']?: 'N/A' ;
@@ -32,12 +32,6 @@ if (isset($_POST["submit_add"])) {
 	$notes = $_POST['notes']?: 'N/A' ;
 	$gateway_username = $_POST['gateway_username']?: 'N/A' ;
 	$monitored = $_POST['monitored'];
-
-
-
-
-
-
 $query = pg_query($con,"INSERT INTO gateways(gateway_id,tti_id,lon,lat,display_name,deployment_status,esn,mac,serial_number,ctn_box_number,ssid,ssid_key,router_username,router_key,gateway_key,owner,frequency,antenna,gateway_site_id,site_location,city,contact,date_installed,care_of,notes,gateway_username,monitored)VALUES('$gateway_id','$tti_id','$lon','$lat','$display_name','$deployment_status','$esn','$mac','$serial_number','$ctn_box_number','$ssid','$ssid_key','$router_username','$router_key','$gateway_key','$owner','$frequency','$antenna','$gateway_site_id','$site_location','$city','$contact','$date_installed','$care_of','$notes','$gateway_username','$monitored')");
 
 pg_close($con);
