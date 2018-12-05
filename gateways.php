@@ -44,10 +44,10 @@
 			<td><?php echo $site_location; ?> </td>
 			<td><?php echo $city; ?> </td>
 			<td><?php echo $owner; ?> </td>
-			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>'> View </a>
+			<td class="action-edit"><a href='<?php echo home_url()."/view/?view=".$esn ?>' title="VIEW"><i class="fas fa-eye"></i> </a>
 			<!-- Check if admin or editor -->
 			<?php if($status=="Admin"): ?>			
-			 <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>'> Edit </a><a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_"> Delete </a>
+			 <a href='<?php echo home_url()."/edit-page/?edit=".$esn ?>' title="EDIT"><i class="fas fa-edit" ></i></a><a href="javaScript:void(0);"  data-name="<?php echo $gateway_id ?>"  class="deleteGate_" title="DELETE"><i class="fas fa-trash-alt"></i> </a>
 			<?php else: ?>
 			<?php endif; ?>
 		</tr> 

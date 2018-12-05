@@ -63,7 +63,7 @@
 						<div><span>Notes :</span><textarea disabled="true"><?php echo $notes; ?></textarea></div>
 						<div><span>Gateway Username :</span><textarea disabled="true"><?php echo $gateway_username; ?></textarea></div>
 						<div><span>Monitor :</span><textarea disabled="true"><?php echo $monitored; ?></textarea></div>
-						<div class="view_back"><a href="gateways">BACK</a></div>
+						<div class="view_back"><a href="gateways">Back</a></div>
 					</div>
 				</div>
 			</div>

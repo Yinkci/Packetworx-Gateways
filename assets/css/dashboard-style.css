@@ -125,7 +125,7 @@ table.gateways-table th:not(:last-child)  {
     min-width: 150px;
 }
 table.gateways-table th:last-child  {
-    min-width: 210px;
+    min-width: 165px;
 }
 table.gateways-table td {
     text-align: center;
@@ -218,7 +218,7 @@ img.main-dashboard-logo {
     opacity: 0.2
 }
 .search-field input:last-child {
-    margin-right: 22px;
+    margin-right: 61px;
 }
 body.dashboard-view iframe {
     width: 100%;
@@ -226,8 +226,16 @@ body.dashboard-view iframe {
     border: none;
 }
 table.gateways-table th:nth-child(2), table.gateways-table th:nth-child(3) {
-    min-width: 111px !important;
+    min-width: 90px !important;
 }
+table.gateways-table th:nth-child(1) {
+    width: 127px !important;
+    min-width: 183px !important;
+}
+table.gateways-table th:nth-child(7) {
+    min-width: 90px;
+}
+
 /*#cs-menu .menu-sen li a {
     color: red;
     border-style: none;
