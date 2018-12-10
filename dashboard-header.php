@@ -1,5 +1,6 @@
 <?php include ("inc/links.php");?>
 <?php  $status= $row['status']; ?>
+<?php $currentPage =  str_replace(".php", "",  basename($_SERVER['PHP_SELF'])); ?>
 <!-- MOBILE MENU -->
 <div id="my-wrapper-cs-menu" >       
 	<nav id="cs-menu" class="cs-menu">
@@ -40,9 +41,7 @@
 	<div class="menu col-md-2 col-md-2 d-none col-xl-2 d-xl-block pd-left10">
 		<div class="header-sen ">
 			<ul class="menu-sen">
-				<?php 
-				$currentPage =  str_replace(".php", "",  basename($_SERVER['PHP_SELF'])); 
-				?>
+				
 				<li class="<?php if($currentPage=="dashboard"):echo "activelink"; else: endif; ?>"><a href="dashboard"><i class="fas fa-code"></i> Dashboard</a></li>
 				<li class="<?php if($currentPage=="gateways" || $currentPage=="edit-page" || $currentPage=="view"  ):echo "activelink"; else: endif; ?>"><a href="gateways"><i class="fas fa-th-list"></i> Gateways</a></li>
 				<?php if($status=="Admin"): ?>	
