@@ -237,7 +237,9 @@ table.gateways-table th:nth-child(1) {
 table.gateways-table th:nth-child(7) {
     min-width: 90px;
 }
-
+.user-col.col-md-4.col-md-12.col-xl-10.d-xl-block {
+    padding: 0px 0px 0px 50px;
+}
 /*#cs-menu .menu-sen li a {
     color: red;
     border-style: none;
