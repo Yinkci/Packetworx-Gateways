@@ -38,6 +38,9 @@
   font-family: "Oswald Regular";
   src: url('../fonts/oswald/Oswald-Regular.ttf');
 }
+html{
+  height: 100%;
+}
 /* Display */
 .d-table {
     display: table;

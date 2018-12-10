@@ -1,12 +1,14 @@
 /*CMS*/
 .header-sen {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     background-color: #58585b;
     background-image: url(https://packetworx.com/media/img/sidebar_bg.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: auto;
+    position: absolute;
 }
 ul.menu-sen li {
     list-style-type: none;
