@@ -29,7 +29,7 @@
 
 			<div class="view_gateways_view">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div><span>ESN :</span><textarea disabled="true"><?php echo $esn; ?></textarea></div>
 						<div><span>Status :</span><textarea disabled="true"><?php echo $deployment_status; ?></textarea></div> 
 						<div><span>Gateway ID :</span><textarea disabled="true"><?php echo $gateway_id; ?></textarea></div>
@@ -42,22 +42,20 @@
 						<div><span>Display Name :</span><textarea disabled="true"><?php echo $display_name; ?></textarea></div> 
 						<div><span>Mac Address :</span><textarea disabled="true"><?php echo $mac; ?></textarea></div>
 						<div><span>Serial Number :</span><textarea disabled="true"><?php echo $serial_number; ?></textarea></div> 
-						
-					</div>
-					<div class="col-md-4">
 						<div><span>CTN Box Number :</span><textarea disabled="true"><?php echo $ctn_box_number; ?></textarea></div>
 						<div><span>SSID Key :</span><textarea disabled="true"><?php echo $ssid_key; ?></textarea></div>
 						<div><span>Router Username :</span><textarea disabled="true"><?php echo $router_username; ?></textarea></div> 
 						<div><span>Router Key :</span><textarea disabled="true"><?php echo $router_key; ?></textarea></div>
-						<div><span>Gateway Key :</span><textarea disabled="true"><?php echo $gateway_key; ?></textarea></div>
+						<div><span>Gateway Key :</span><textarea disabled="true"><?php echo $gateway_key; ?></textarea></div>	
+					</div>
+					<div class="col-md-6">
+
 						<div><span>Gateway Key :</span><textarea disabled="true"><?php echo $gateway_key; ?></textarea></div>
 						<div><span>Owner :</span><textarea disabled="true"><?php echo $owner; ?></textarea></div>
 						<div><span>Frequency :</span><textarea disabled="true"><?php echo $frequency; ?></textarea></div>
 						<div><span>Antenna :</span><textarea disabled="true"><?php echo $antenna; ?></textarea></div>
 						<div><span>Gateway Site ID :</span><textarea disabled="true"><?php echo $gateway_site_id; ?></textarea></div>
 						<div><span>Contact :</span><textarea disabled="true"><?php echo $contact; ?></textarea></div>
-					</div>
-					<div class="col-md-4">
 						<div><span>Date Installed :</span><textarea disabled="true"><?php echo $date_installed; ?></textarea></div>
 						<div><span>Care Of :</span><textarea disabled="true"><?php echo $care_of; ?></textarea></div>
 						<div><span>Notes :</span><textarea disabled="true"><?php echo $notes; ?></textarea></div>
