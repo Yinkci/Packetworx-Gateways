@@ -49,7 +49,7 @@
 					<form method="POST" action="data/changePass">
 						<div class="settings_ changepass ">
 							<div class="id_user"></div><input type="hidden" name="id_user" value="<?php echo $id_user ?>">
-							<div class="username">Username</div><input disabled="true" type="text" name="username" value="<?php echo $username ?>">
+							<div class="username">Username</div><input readonly type="text" name="username" value="<?php echo $username ?>">
 							<div class="password">Password</div><input type="password" name="password" value="" class="f_pass">
 							<div>Confirm Password</div><input type="password" name="password_confirm" value=""  class="confirm_password">
 							<div class="row">
